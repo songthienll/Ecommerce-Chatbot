@@ -1,0 +1,127 @@
+[
+  {
+    "question": "Sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim giá bao nhiêu?",
+    "ground_truth_answers": ["Sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim", "Đàn Ông Sao Hỏa Đàn Bà Sao Kim"],
+    "category_scope": "price_lookup"
+  },
+  {
+    "question": "Có cuốn sách nào bán dưới 200 nghìn không?",
+    "ground_truth_answers": ["Sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim"],
+    "category_scope": "price_lookup"
+  },
+  {
+    "question": "Tã dán người lớn SunMate giá bao nhiêu?",
+    "ground_truth_answers": ["Tã Dán Người Lớn SunMate AX2"],
+    "category_scope": "price_lookup"
+  },
+  {
+    "question": "Có sữa bột Anlene nào dưới 250 nghìn không?",
+    "ground_truth_answers": ["Sữa Bột Anlene Gold Movepro Hương Chocolate", "Sữa Bột Anlene Hương Vanilla"],
+    "category_scope": "price_lookup"
+  },
+  {
+    "question": "Nước hoa Jimmy Choo I Want Choo giá bao nhiêu?",
+    "ground_truth_answers": ["Nước Hoa Nữ Jimmy Choo I Want Choo EDP"],
+    "category_scope": "price_lookup"
+  },
+  {
+    "question": "Tã dán người lớn SunMate AX2 có đặc điểm gì?",
+    "ground_truth_answers": ["Tã Dán Người Lớn SunMate AX2", "SunMate AX2"],
+    "category_scope": "spec_questions"
+  },
+  {
+    "question": "Anlene Gold có tác dụng gì với xương khớp?",
+    "ground_truth_answers": ["Sữa Bột Anlene Gold Movepro Hương Chocolate", "Sữa Bột Anlene Hương Vanilla"],
+    "category_scope": "spec_questions"
+  },
+  {
+    "question": "Sữa Anlene hướng vanilla có đối tượng sử dụng nào?",
+    "ground_truth_answers": ["Sữa Bột Anlene Hương Vanilla", "Anlene Hương Vanilla"],
+    "category_scope": "spec_questions"
+  },
+  {
+    "question": "Nước hoa Jimmy Choo I Want Choo có nồng độ gì?",
+    "ground_truth_answers": ["Nước Hoa Nữ Jimmy Choo I Want Choo EDP", "Jimmy Choo I Want Choo"],
+    "category_scope": "spec_questions"
+  },
+  {
+    "question": "Anlene Gold Movepro có thành phần gì?",
+    "ground_truth_answers": ["Sữa Bột Anlene Gold Movepro Hương Chocolate", "Anlene Gold Movepro"],
+    "category_scope": "spec_questions"
+  },
+  {
+    "question": "Gợi ý cho tôi một cuốn sách về kỹ năng sống dưới 200k",
+    "ground_truth_answers": ["Sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim"],
+    "category_scope": "product_recommendation"
+  },
+  {
+    "question": "Có sản phẩm sữa bột cho người lớn tuổi nào không?",
+    "ground_truth_answers": ["Sữa Bột Anlene Gold Movepro Hương Chocolate", "Sữa Bột Anlene Hương Vanilla"],
+    "category_scope": "product_recommendation"
+  },
+  {
+    "question": "Cho tôi gợi ý một sản phẩm sữa tốt cho xương khớp",
+    "ground_truth_answers": ["Sữa Bột Anlene Gold Movepro Hương Chocolate", "Sữa Bột Anlene Hương Vanilla"],
+    "category_scope": "product_recommendation"
+  },
+  {
+    "question": "Tiki có bán tã cho người lớn không?",
+    "ground_truth_answers": ["Tã Dán Người Lớn SunMate AX2"],
+    "category_scope": "product_recommendation"
+  },
+  {
+    "question": "Gợi ý nước hoa nữ dưới 3 triệu cho người trên 25 tuổi",
+    "ground_truth_answers": ["Nước Hoa Nữ Jimmy Choo I Want Choo EDP"],
+    "category_scope": "product_recommendation"
+  },
+  {
+    "question": "Có cuốn sách kỹ năng giao tiếp nào trên Tiki?",
+    "ground_truth_answers": ["Sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim"],
+    "category_scope": "category_search"
+  },
+  {
+    "question": "Tiki có những sản phẩm sữa bột nào cho người lớn?",
+    "ground_truth_answers": ["Sữa Bột Anlene Gold Movepro Hương Chocolate", "Sữa Bột Anlene Hương Vanilla"],
+    "category_scope": "category_search"
+  },
+  {
+    "question": "Có sản phẩm tã bỉm dành cho người lớn không?",
+    "ground_truth_answers": ["Tã Dán Người Lớn SunMate AX2"],
+    "category_scope": "category_search"
+  },
+  {
+    "question": "Tiki có bán nước hoa nữ không?",
+    "ground_truth_answers": ["Nước Hoa Nữ Jimmy Choo I Want Choo EDP"],
+    "category_scope": "category_search"
+  },
+  {
+    "question": "Sữa Anlene Gold và sữa Anlene vanilla khác nhau chỗ nào?",
+    "ground_truth_answers": ["Sữa Bột Anlene Gold Movepro Hương Chocolate", "Sữa Bột Anlene Hương Vanilla"],
+    "category_scope": "comparative"
+  },
+  {
+    "question": "So sánh sữa Anlene hương vanilla và hương chocolate giá bao nhiêu?",
+    "ground_truth_answers": ["Sữa Bột Anlene Gold Movepro Hương Chocolate", "Sữa Bột Anlene Hương Vanilla"],
+    "category_scope": "comparative"
+  },
+  {
+    "question": "Cuốn sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim có mấy trang?",
+    "ground_truth_answers": ["Sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim"],
+    "category_scope": "spec_questions"
+  },
+  {
+    "question": "Sữa Anlene chocolate bao nhiêu kcal?",
+    "ground_truth_answers": ["Sữa Bột Anlene Gold Movepro Hương Chocolate"],
+    "category_scope": "spec_questions"
+  },
+  {
+    "question": "Tã SunMate AX2 size XL dành cho người có vòng bụng bao nhiêu?",
+    "ground_truth_answers": ["Tã Dán Người Lớn SunMate AX2"],
+    "category_scope": "spec_questions"
+  },
+  {
+    "question": "Nước hoa Jimmy Choo I Want Choo có xuất xứ ở đâu?",
+    "ground_truth_answers": ["Nước Hoa Nữ Jimmy Choo I Want Choo EDP", "Jimmy Choo I Want Choo"],
+    "category_scope": "spec_questions"
+  }
+]

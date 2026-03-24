@@ -1,0 +1,21 @@
+# Data (large, generated)
+backend/data/
+backend/logs/
+backend/src/__pycache__/
+*.pyc
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+dist/
+.env
+*.log
+.DS_Store
+*.db
+chromadb/
+qdrant_storage/
+
+# Frontend
+frontend/node_modules/
+frontend/.vite/

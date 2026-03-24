@@ -1,0 +1,1093 @@
+{
+  "metadata": {
+    "total_questions": 25,
+    "evaluated_questions": 25,
+    "valid_results": 25,
+    "top_k": 5,
+    "chunk_size": 300,
+    "chunk_overlap": 50,
+    "dry_run": false,
+    "ragas_available": true,
+    "ragas_error": null
+  },
+  "aggregate_metrics": {
+    "hit@1": 0.48,
+    "hit@3": 0.52,
+    "hit@5": 0.52,
+    "mrr": 0.5,
+    "precision@1": 0.48,
+    "precision@3": 0.32,
+    "precision@5": 0.224,
+    "rouge_l": 0.2772,
+    "faithfulness": 3.28,
+    "relevance": 2.04,
+    "ragas_context_precision": null,
+    "ragas_faithfulness": null,
+    "ragas_answer_relevancy": null
+  },
+  "per_question": [
+    {
+      "question": "Sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim giá bao nhiêu?",
+      "ground_truth_answers": [
+        "Sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim",
+        "Đàn Ông Sao Hỏa Đàn Bà Sao Kim"
+      ],
+      "retrieved_products": [
+        "Sách Circe",
+        "Sách Hoàng Tử Bé (Tái Bản)",
+        "Sách Búp Sen Xanh",
+        "Sách Lược Sử Thời Gian",
+        "Sách Dế Mèn Phiêu Lưu Ký"
+      ],
+      "retrieval_metrics": {
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": false,
+        "mrr": 0.0,
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0
+      },
+      "generated_answer": "Tôi không tìm thấy thông tin về sách \"Đàn Ông Sao Hỏa Đàn Bà Sao Kim\" trong danh sách sản phẩm được cung cấp.",
+      "context_used": "ố trang: 528. Nhà xuất bản: Nhà Xuất Bản Kim Đồng. Giá: 179,000 VND.\n\nGiả: Trác Phong. Loại bìa: Bìa mềm. Số trang: 102. Nhà xuất bản: Nhà Xuất Bản Hội Nhà Văn. Giá: 74,000 VND.\n\nố trang: 444. Nhà xuất bản: Nhà Xuất Bản Kim Đồng. Giá: 66,000 VND.\n\n từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Phiên bản sách: Phiên bản thường. Công ty phát hành: NXB Trẻ. Ngày xuất bản: 2022-06-01 00:00:00. Kích thước: 14x20cm. Dịch Giả: Cao Chi, Phạm Văn Thiều. Loại bìa: Bìa mềm. Số trang: 286. Nhà xuất bản: NXB Trẻ. Giá: 84,000 VND.\n\n từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Phiên bản sách: Phiên bản thường. Công ty phát hành: Nhà Xuất Bản Kim Đồng. Ngày xuất bản: 2019-02-25 00:00:00. Kích thước: 18 x 25 cm. Loại bìa: Bìa cứng. Số trang: 144. Nhà xuất bản: Nhà Xuất Bản Kim Đồng. Giá: 142,500 VND.",
+      "retrieved_contexts": [
+        "ố trang: 528. Nhà xuất bản: Nhà Xuất Bản Kim Đồng. Giá: 179,000 VND.",
+        "Giả: Trác Phong. Loại bìa: Bìa mềm. Số trang: 102. Nhà xuất bản: Nhà Xuất Bản Hội Nhà Văn. Giá: 74,000 VND.",
+        "ố trang: 444. Nhà xuất bản: Nhà Xuất Bản Kim Đồng. Giá: 66,000 VND.",
+        " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Phiên bản sách: Phiên bản thường. Công ty phát hành: NXB Trẻ. Ngày xuất bản: 2022-06-01 00:00:00. Kích thước: 14x20cm. Dịch Giả: Cao Chi, Phạm Văn Thiều. Loại bìa: Bìa mềm. Số trang: 286. Nhà xuất bản: NXB Trẻ. Giá: 84,000 VND.",
+        " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Phiên bản sách: Phiên bản thường. Công ty phát hành: Nhà Xuất Bản Kim Đồng. Ngày xuất bản: 2019-02-25 00:00:00. Kích thước: 18 x 25 cm. Loại bìa: Bìa cứng. Số trang: 144. Nhà xuất bản: Nhà Xuất Bản Kim Đồng. Giá: 142,500 VND."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.47222222222222227,
+        "faithfulness": 5.0,
+        "relevance": 2.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Có cuốn sách nào bán dưới 200 nghìn không?",
+      "ground_truth_answers": [
+        "Sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim"
+      ],
+      "retrieved_products": [
+        "Sách Ngôi Làng Cổ Mộ (Tái Bản)",
+        "Sách Học Cách Học (Tái bản)",
+        "Sách Đi Tìm Lẽ Sống (Tái Bản )",
+        "Sách Ngôi Nhà Bên Bờ Biển Xanh Thẳm",
+        "Sách Quân Vương – Thuật Cai Trị (Tái Bản)"
+      ],
+      "retrieval_metrics": {
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": false,
+        "mrr": 0.0,
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0
+      },
+      "generated_answer": "Có một cuốn sách bán dưới 200 nghìn. Đó là cuốn sách có số trang 200, Nhà xuất bản: Nhà Xuất Bản Thế Giới, Giá: 78,400 VND.",
+      "context_used": " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Phiên bản sách: Phiên bản thường. Công ty phát hành: Tri Thức Trẻ Books. Ngày xuất bản: 2022-01-01 00:00:00. Kích thước: 16 x 24 cm. Loại bìa: Bìa mềm. Số trang: 368. Nhà xuất bản: Nhà Xuất Bản Hội Nhà Văn. Giá: 132,000 VND.\n\nố trang: 280. Nhà xuất bản: Nhà Xuất Bản Thế Giới. Giá: 100,200 VND.\n\n cảm hứng cho hàng triệu người trên khắp thế giới. Tính đến năm 1997, cuốn sách đã bán hơn 10 triệu bản và được dịch ra 24 ngôn ngữ; đến năm 2022, con số này lên đến 16 triệu bản và 52 ngôn ngữ. Cuốn sách này dành cho ai? Những ai đang lạc lối, tìm kiếm lại mục đích sống sau mất mát.\n\nố trang: 640. Nhà xuất bản: Nhà Xuất Bản Thế Giới. Giá: 119,400 VND.\n\nố trang: 200. Nhà xuất bản: Nhà Xuất Bản Thế Giới. Giá: 78,400 VND.",
+      "retrieved_contexts": [
+        " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Phiên bản sách: Phiên bản thường. Công ty phát hành: Tri Thức Trẻ Books. Ngày xuất bản: 2022-01-01 00:00:00. Kích thước: 16 x 24 cm. Loại bìa: Bìa mềm. Số trang: 368. Nhà xuất bản: Nhà Xuất Bản Hội Nhà Văn. Giá: 132,000 VND.",
+        "ố trang: 280. Nhà xuất bản: Nhà Xuất Bản Thế Giới. Giá: 100,200 VND.",
+        " cảm hứng cho hàng triệu người trên khắp thế giới. Tính đến năm 1997, cuốn sách đã bán hơn 10 triệu bản và được dịch ra 24 ngôn ngữ; đến năm 2022, con số này lên đến 16 triệu bản và 52 ngôn ngữ. Cuốn sách này dành cho ai? Những ai đang lạc lối, tìm kiếm lại mục đích sống sau mất mát.",
+        "ố trang: 640. Nhà xuất bản: Nhà Xuất Bản Thế Giới. Giá: 119,400 VND.",
+        "ố trang: 200. Nhà xuất bản: Nhà Xuất Bản Thế Giới. Giá: 78,400 VND."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.24050632911392406,
+        "faithfulness": 4.0,
+        "relevance": 2.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Tã dán người lớn SunMate giá bao nhiêu?",
+      "ground_truth_answers": [
+        "Tã Dán Người Lớn SunMate AX2"
+      ],
+      "retrieved_products": [
+        "Mẫu Mới - Tã dán Sunmate L18 +2 (20 Miếng) (Mẫu Mới Của Sunmate ML18) - Tã người lớn Sunmate- Date mới",
+        "Tã Dán Người Lớn SunMate AX2 Size XL10 (10 Miếng)",
+        "Combo 2 Tã Quần Người Lớn Sunmate Mềm Mại L8 (8 Miếng)",
+        "Combo 6 Gói Tấm Lót Sunmate 20 Miếng (45*70cm) - Đệm lót người lớn, người già",
+        "Combo 3 Tấm lót SunMate cải tiến mới 20 miếng/gói size M (45 x 70cm)"
+      ],
+      "retrieval_metrics": {
+        "hit@1": false,
+        "hit@3": true,
+        "hit@5": true,
+        "mrr": 0.5,
+        "precision@1": 0.0,
+        "precision@3": 0.3333333333333333,
+        "precision@5": 0.2
+      },
+      "generated_answer": "Tôi không tìm thấy thông tin về sản phẩm \"Tã dán người lớn SunMate\" trong dữ liệu hiện tại.",
+      "context_used": " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thương hiệu: SunMate. Xuất xứ thương hiệu: Việt Nam. Xuất xứ (Made in): Việt Nam. Sản phẩm có được bảo hành không?: Không. Thương hiệu: SunMate. Giá: 150,000 VND.\n\n từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thương hiệu: SunMate. Xuất xứ thương hiệu: Việt Nam. Xuất xứ (Made in): Việt Nam. Sản phẩm có được bảo hành không?: Không. Thương hiệu: SunMate. Giá: 108,000 VND.\n\n từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thương hiệu: SunMate. Xuất xứ thương hiệu: Việt Nam. Xuất xứ (Made in): Việt Nam. Thương hiệu: SunMate. Giá: 154,000 VND.\n\n từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thương hiệu: SunMate. Xuất xứ (Made in): Việt Nam. Sản phẩm có được bảo hành không?: Không. Thương hiệu: SunMate. Giá: 550,000 VND.\n\n từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Vòng bụng (Dành cho tã): 45 - 70 cm. Thương hiệu: SunMate. Xuất xứ thương hiệu: Việt Nam. Xuất xứ (Made in): Việt Nam. Sản phẩm có được bảo hành không?: Không. Thương hiệu: SunMate. Giá: 240,000 VND.",
+      "retrieved_contexts": [
+        " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thương hiệu: SunMate. Xuất xứ thương hiệu: Việt Nam. Xuất xứ (Made in): Việt Nam. Sản phẩm có được bảo hành không?: Không. Thương hiệu: SunMate. Giá: 150,000 VND.",
+        " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thương hiệu: SunMate. Xuất xứ thương hiệu: Việt Nam. Xuất xứ (Made in): Việt Nam. Sản phẩm có được bảo hành không?: Không. Thương hiệu: SunMate. Giá: 108,000 VND.",
+        " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thương hiệu: SunMate. Xuất xứ thương hiệu: Việt Nam. Xuất xứ (Made in): Việt Nam. Thương hiệu: SunMate. Giá: 154,000 VND.",
+        " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thương hiệu: SunMate. Xuất xứ (Made in): Việt Nam. Sản phẩm có được bảo hành không?: Không. Thương hiệu: SunMate. Giá: 550,000 VND.",
+        " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Vòng bụng (Dành cho tã): 45 - 70 cm. Thương hiệu: SunMate. Xuất xứ thương hiệu: Việt Nam. Xuất xứ (Made in): Việt Nam. Sản phẩm có được bảo hành không?: Không. Thương hiệu: SunMate. Giá: 240,000 VND."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.3697478991596639,
+        "faithfulness": 5.0,
+        "relevance": 2.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Có sữa bột Anlene nào dưới 250 nghìn không?",
+      "ground_truth_answers": [
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate",
+        "Sữa Bột Anlene Hương Vanilla"
+      ],
+      "retrieved_products": [
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate (Hộp Giấy 440g)",
+        "Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g)",
+        "[Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon",
+        "Sữa bột Vinamilk Dielac Grow Plus 2+ Hộp thiếc 850g (Sữa Non)",
+        "Thùng 24 Hộp Sữa Bắp Non LOF 180ml/hộp"
+      ],
+      "retrieval_metrics": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "mrr": 1.0,
+        "precision@1": 1.0,
+        "precision@3": 1.0,
+        "precision@5": 0.6
+      },
+      "generated_answer": "Tôi không tìm thấy sữa bột Anlene nào có giá dưới 250 nghìn đồng trong thông tin sản phẩm và chính sách được cung cấp.",
+      "context_used": "chất, hương socola tổng hợp, Lecithin đậu nành,... Ngoài ra, sản phẩm cung cấp cho cơ thể khoảng 158 kcal trên 40g bột sữa (pha trong 200ml sữa). Đặc điểm nổi bật Anlene Gold 3X/Anlene 3 Khoẻ mới là sản phẩm sữa chứa nhiều dưỡng chất thiết yếu hỗ trợ hệ Cơ-Xương-Khớp khỏe mạnh.\n\n 131 kcal trên 35g bột sữa (pha trong 200ml nước). Công dụng - Tác dụng của sản phẩm với sức khỏe Anlene Gold 3X hay còn có tên gọi là Anlene 3 Khoẻ mới là sản phẩm sữa chứa nhiều dưỡng chất thiết yếu giúp hỗ trợ hệ Cơ - Xương - Khớp khỏe mạnh.\n\n[Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. [Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. * Bao bì có thể thay đổi tùy đợt hàngSữa Bột Anlene Gold 5X Hương Vanilla (Hộp Thiếc 800g)Giới thiệuAnlene Gold 5X/Anlene 5 khoẻ vàng mới là sản phẩm sữa chứa phức hợp dinh dưỡng với hoạt chất MFG....\n\n sạch và tiệt trùng dụng cụ pha trước khi sử dụng. Pha 6 muỗng gạt (≈ 44g) sữa bột với 180ml nước ấm khoảng 50°C. Khuấy đều cho tan hoàn toàn và cho bé uống ngay sau khi pha. Bổ sung 2 ly sữa mỗi ngày để đạt hiệu quả dinh dưỡng tối ưu.\n\n hòa tan (1), chất ổn định (INS 471, INS 466, INS 460(i)), hương liệu tổng hợp (hương bắp), phẩm màu tự nhiên (INS 100(i)), muối, vitamin (A, B1, B3, B6). Sản phẩm có chứa sữa. Hướng dẫn sử dụng: Dùng được cho người ăn chay. Dùng từ 1 đến 2 hộp mỗi ngày. Lắc đều trước khi sử dụng.",
+      "retrieved_contexts": [
+        "chất, hương socola tổng hợp, Lecithin đậu nành,... Ngoài ra, sản phẩm cung cấp cho cơ thể khoảng 158 kcal trên 40g bột sữa (pha trong 200ml sữa). Đặc điểm nổi bật Anlene Gold 3X/Anlene 3 Khoẻ mới là sản phẩm sữa chứa nhiều dưỡng chất thiết yếu hỗ trợ hệ Cơ-Xương-Khớp khỏe mạnh.",
+        " 131 kcal trên 35g bột sữa (pha trong 200ml nước). Công dụng - Tác dụng của sản phẩm với sức khỏe Anlene Gold 3X hay còn có tên gọi là Anlene 3 Khoẻ mới là sản phẩm sữa chứa nhiều dưỡng chất thiết yếu giúp hỗ trợ hệ Cơ - Xương - Khớp khỏe mạnh.",
+        "[Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. [Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. * Bao bì có thể thay đổi tùy đợt hàngSữa Bột Anlene Gold 5X Hương Vanilla (Hộp Thiếc 800g)Giới thiệuAnlene Gold 5X/Anlene 5 khoẻ vàng mới là sản phẩm sữa chứa phức hợp dinh dưỡng với hoạt chất MFG....",
+        " sạch và tiệt trùng dụng cụ pha trước khi sử dụng. Pha 6 muỗng gạt (≈ 44g) sữa bột với 180ml nước ấm khoảng 50°C. Khuấy đều cho tan hoàn toàn và cho bé uống ngay sau khi pha. Bổ sung 2 ly sữa mỗi ngày để đạt hiệu quả dinh dưỡng tối ưu.",
+        " hòa tan (1), chất ổn định (INS 471, INS 466, INS 460(i)), hương liệu tổng hợp (hương bắp), phẩm màu tự nhiên (INS 100(i)), muối, vitamin (A, B1, B3, B6). Sản phẩm có chứa sữa. Hướng dẫn sử dụng: Dùng được cho người ăn chay. Dùng từ 1 đến 2 hộp mỗi ngày. Lắc đều trước khi sử dụng."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.2981366459627329,
+        "faithfulness": 4.0,
+        "relevance": 4.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Nước hoa Jimmy Choo I Want Choo giá bao nhiêu?",
+      "ground_truth_answers": [
+        "Nước Hoa Nữ Jimmy Choo I Want Choo EDP"
+      ],
+      "retrieved_products": [
+        "Nước Hoa Nữ Jimmy Choo I Want Choo EDP 100ml",
+        "Nước Hoa Nam Jimmy Choo Man Ice Edt 100Ml",
+        "Nước Hoa Nữ Salvatore Ferragamo Signorina - Eau De Parfum (100ml)",
+        "Nước Hoa Nữ Salvatore Ferragamo Signorina Misteriosa - Eau De Parfum (100ml)",
+        "Nước Hoa Nam Trussardi Uomo - Eau De Toilette (100ml)"
+      ],
+      "retrieval_metrics": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "mrr": 1.0,
+        "precision@1": 1.0,
+        "precision@3": 0.6666666666666666,
+        "precision@5": 0.4
+      },
+      "generated_answer": "Tôi không tìm thấy thông tin về nước hoa Jimmy Choo I Want Choo trong danh sách sản phẩm.",
+      "context_used": " Hương giữa: Hoa huệ, Hoa nhài Sambac Hương cuối: Vanila, Benzoin Mở màn cho năm 2021 tráng lệ, Jimmy Choo ra mắt tuyệt tác nước hoa mới mang tên I WANT CHOO . Hào nhoáng và sôi nổi, tự tin và quyến rũ, I WANT CHOO là món trang sức đắt giá và là hiện thân hoàn hảo của người phụ nữ Jimmy Choo.\n\n từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thương hiệu: Jimmy Choo. Xuất xứ thương hiệu: Anh. Xuất xứ (Made in): Pháp. Hạn sử dụng: 60 Tháng Kể Từ Ngày Sản Xuất. Thương hiệu: Jimmy Choo. Giá: 1,900,000 VND.\n\n từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thương hiệu: Salvatore Ferragamo. Xuất xứ thương hiệu: Ý. Xuất xứ (Made in): Ý. Dung tích: 100ml. Hạn sử dụng: 60 Tháng Kể Từ Ngày Sản Xuất. Thương hiệu: Salvatore Ferragamo. Giá: 1,900,000 VND.\n\n từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Sản phẩm có được bảo hành không?: Không. Thương hiệu: Salvatore Ferragamo. Xuất xứ thương hiệu: Ý. Xuất xứ (Made in): Ý. Dung tích: 100ml. Thương hiệu: Salvatore Ferragamo. Giá: 2,050,000 VND.\n\n từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thương hiệu: TRUSSARDI. Xuất xứ thương hiệu: Ý. Xuất xứ (Made in): Ý. Dung tích: 100ml. Hạn sử dụng: 60 Tháng Kể Từ Ngày Sản Xuất. Thương hiệu: TRUSSARDI. Giá: 1,800,000 VND.",
+      "retrieved_contexts": [
+        " Hương giữa: Hoa huệ, Hoa nhài Sambac Hương cuối: Vanila, Benzoin Mở màn cho năm 2021 tráng lệ, Jimmy Choo ra mắt tuyệt tác nước hoa mới mang tên I WANT CHOO . Hào nhoáng và sôi nổi, tự tin và quyến rũ, I WANT CHOO là món trang sức đắt giá và là hiện thân hoàn hảo của người phụ nữ Jimmy Choo.",
+        " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thương hiệu: Jimmy Choo. Xuất xứ thương hiệu: Anh. Xuất xứ (Made in): Pháp. Hạn sử dụng: 60 Tháng Kể Từ Ngày Sản Xuất. Thương hiệu: Jimmy Choo. Giá: 1,900,000 VND.",
+        " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thương hiệu: Salvatore Ferragamo. Xuất xứ thương hiệu: Ý. Xuất xứ (Made in): Ý. Dung tích: 100ml. Hạn sử dụng: 60 Tháng Kể Từ Ngày Sản Xuất. Thương hiệu: Salvatore Ferragamo. Giá: 1,900,000 VND.",
+        " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Sản phẩm có được bảo hành không?: Không. Thương hiệu: Salvatore Ferragamo. Xuất xứ thương hiệu: Ý. Xuất xứ (Made in): Ý. Dung tích: 100ml. Thương hiệu: Salvatore Ferragamo. Giá: 2,050,000 VND.",
+        " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thương hiệu: TRUSSARDI. Xuất xứ thương hiệu: Ý. Xuất xứ (Made in): Ý. Dung tích: 100ml. Hạn sử dụng: 60 Tháng Kể Từ Ngày Sản Xuất. Thương hiệu: TRUSSARDI. Giá: 1,800,000 VND."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.4724409448818898,
+        "faithfulness": 5.0,
+        "relevance": 2.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Tã dán người lớn SunMate AX2 có đặc điểm gì?",
+      "ground_truth_answers": [
+        "Tã Dán Người Lớn SunMate AX2",
+        "SunMate AX2"
+      ],
+      "retrieved_products": [
+        "Tã Dán Người Lớn SunMate AX2 Size XL10 (10 Miếng)",
+        "Combo 2 Tã Quần Người Lớn Sunmate Mềm Mại L8 (8 Miếng)",
+        "Combo 2 Gói Tã Quần Người Lớn Sunmate Khô Thoáng L7 (7 Miếng/ Gói)",
+        "Combo 6 Gói Tấm Lót Sunmate 20 Miếng (45*70cm) - Đệm lót người lớn, người già",
+        "Combo 2 Tấm lót SunMate cải tiến mới 10 miếng (45 x 70cm)"
+      ],
+      "retrieval_metrics": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "mrr": 1.0,
+        "precision@1": 1.0,
+        "precision@3": 0.3333333333333333,
+        "precision@5": 0.2
+      },
+      "generated_answer": "Tã Dán Người Lớn SunMate AX2 Size XL10 (10 Miếng) có đặc điểm là mặt đáy dạng vải thoáng khí, giúp lưu thông không khí tối đa.",
+      "context_used": "Tã Dán Người Lớn SunMate AX2 Size XL10 (10 Miếng). Tã Dán Người Lớn SunMate AX2 Size XL10 (10 Miếng). Mặt đáy dạng vải thoáng khíTã Dán Người Lớn SunMate G2 Size XL10 (10 Miếng) được sản xuất từ vải không dệt mềm mại, giúp lưu thông không khí tối đa. Khả năng thoát hơi nóng ẩm hiệu quả giúp cho người....\n\n ngày. Với người lớn mất kiểm soát bài tiết ho.... Combo 2 Tã Quần Người Lớn Sunmate Mềm Mại L8 (8 Miếng) Giới thiệu Tã quần SunMate Mềm Mại phù hợp với người có thể đi lại và thích hợp mặc thoải mái mỗi ngày.\n\n có thể đi lại, và cần độ thấm hút cao. Với ng.... [Mẫu mới] Combo 2 Tã quần SunMate siêu mềm mại G1 mới size XL-07 miếng Giới thiệu Combo 2 Gói Tã Quần Người Lớn Sunmate Khô Thoáng L7 phù hợp với người có thể đi lại, và cần độ thấm hút cao.\n\nCombo 6 Gói Tấm Lót Sunmate 20 Miếng (45*70cm) - Đệm lót người lớn, người già. Combo 6 Gói Tấm Lót Sunmate 20 Miếng (45*70cm) - Đệm lót người lớn, người già. Sản phẩm tấm lót SunMate dành cho cả nam và nữ, phù hợp với người hạn chế khả năng đi lại. Hạt gel tác động kép siêu thấm hút và kháng khuẩn hiệu quả cùng lớp dẫn thấm thông minh thấm hút nhanh, ngăn ....\n\nt gel tác động kép siêu thấm hút và kháng khuẩ.... Combo 2 Tấm lót SunMate cải tiến mới (45 x 70cm) Giới thiệu Sản phẩm tấm lót SunMate dành cho cả nam và nữ, phù hợp với người hạn chế khả năng đi lại.",
+      "retrieved_contexts": [
+        "Tã Dán Người Lớn SunMate AX2 Size XL10 (10 Miếng). Tã Dán Người Lớn SunMate AX2 Size XL10 (10 Miếng). Mặt đáy dạng vải thoáng khíTã Dán Người Lớn SunMate G2 Size XL10 (10 Miếng) được sản xuất từ vải không dệt mềm mại, giúp lưu thông không khí tối đa. Khả năng thoát hơi nóng ẩm hiệu quả giúp cho người....",
+        " ngày. Với người lớn mất kiểm soát bài tiết ho.... Combo 2 Tã Quần Người Lớn Sunmate Mềm Mại L8 (8 Miếng) Giới thiệu Tã quần SunMate Mềm Mại phù hợp với người có thể đi lại và thích hợp mặc thoải mái mỗi ngày.",
+        " có thể đi lại, và cần độ thấm hút cao. Với ng.... [Mẫu mới] Combo 2 Tã quần SunMate siêu mềm mại G1 mới size XL-07 miếng Giới thiệu Combo 2 Gói Tã Quần Người Lớn Sunmate Khô Thoáng L7 phù hợp với người có thể đi lại, và cần độ thấm hút cao.",
+        "Combo 6 Gói Tấm Lót Sunmate 20 Miếng (45*70cm) - Đệm lót người lớn, người già. Combo 6 Gói Tấm Lót Sunmate 20 Miếng (45*70cm) - Đệm lót người lớn, người già. Sản phẩm tấm lót SunMate dành cho cả nam và nữ, phù hợp với người hạn chế khả năng đi lại. Hạt gel tác động kép siêu thấm hút và kháng khuẩn hiệu quả cùng lớp dẫn thấm thông minh thấm hút nhanh, ngăn ....",
+        "t gel tác động kép siêu thấm hút và kháng khuẩ.... Combo 2 Tấm lót SunMate cải tiến mới (45 x 70cm) Giới thiệu Sản phẩm tấm lót SunMate dành cho cả nam và nữ, phù hợp với người hạn chế khả năng đi lại."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.3636363636363636,
+        "faithfulness": 5.0,
+        "relevance": 4.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Anlene Gold có tác dụng gì với xương khớp?",
+      "ground_truth_answers": [
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate",
+        "Sữa Bột Anlene Hương Vanilla"
+      ],
+      "retrieved_products": [
+        "Combo 3 TPBS Anlene Gold hương vani 1.2kg - Tặng máy vắt cam",
+        "Glucosamine 1500mg Chondroitin 1200mg Kirkland Signature Mỹ- Giảm các triệu chứng đau nhức xương khớp hiệu quả - QuaTangMe Extaste",
+        "[Tặng Hộp 15v] Combo 2 Hộp 60v - Viên Uống Giảm Đau Xương Khớp JEX Ecogreen Tái Tạo Sụn Khớp",
+        "[Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon",
+        "Sữa bột Vinamilk CanxiPro 900g (Hộp thiếc) - Sữa bổ sung Canxi cho người già cao tuổi, Tốt cho xương khớp - 900g"
+      ],
+      "retrieval_metrics": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "mrr": 1.0,
+        "precision@1": 1.0,
+        "precision@3": 0.3333333333333333,
+        "precision@5": 0.4
+      },
+      "generated_answer": "Anlene Gold có tác dụng tăng cường sức khỏe xương khớp, giúp giảm nguy cơ lão hóa xương và tăng cường sức khỏe cơ sau 4 tuần. Sản phẩm này chứa phức hợp dinh dưỡng và hoạt chất MFGM đã được kiểm nghiệm lâm sàng, giúp tăng 40% khối lượng cơ, hỗ trợ xương khớp chắc khỏe, dẻo dai.",
+      "context_used": "ỚP LINH HOẠT • Collagen & Vitamin C cho khớp linh hoạt • Hoạt chất MFGM giúp tăng 2 lần độ dẻo dai Uống Anlene Gold – Trẻ khỏe vững vàng Anlene là nhãn hiệu được Hội loãng xương quốc tế khuyên dùng, giúp giảm nguy cơ lão hóa xương và tăng cường sức khỏe cơ sau 4 tuần HƯỚNG DẪN SỬ DỤNG • Cho 4 muỗng\n\niảm các bệnh về xương khớp và giảm tình trạng khô mắt. - Glucosamine: hỗ trợ sự phát triển của các mô giữa sụn khớp và dịch khớp. Khi Glucosamine và Chondroitin phối hợp với nhau để thúc đẩy sức khỏe tổng thể của sụn và khớp.\n\niêm - nguyên nhân hàng đầu làm phá hủy xương khớp. Nhờ đó giúp hỗ trợ giảm đau nhanh, bền vững, an toàn , bảo vệ xương khớp chắc khỏe, toàn diện, giảm khả năng tái phát bệnh. Khi sức khỏe xương khớp được cải thiện, người bệnh sẽ vận động linh hoạt, tự chủ cuộc sống.\n\n, Khớp linh hoạt, Nhanh nhẹn hơn, Thêm năng lượng. Thành phần Đặc điểm nổi bật Tăng cường sức khỏe xương khớp: Với phức hợp dinh dưỡng và hoạt chất MFGM đã được kiểm nghiệm lâm sàng, giúp tăng 40% khối lượng cơ, hỗ trợ xương khớp chắc khỏe, dẻo dai.\n\n và giảm chất lượng cuộc sống, đặc biệt là phụ nữ. Sản phẩm dinh.... Loãng xương và viêm khớp là các bệnh lý thường gặp dễ dẫn đến nguy cơ gãy xương, thoái hóa khớp làm ảnh hưởng nhu cầu vận động hàng ngày và giảm chất lượng cuộc sống, đặc biệt là phụ nữ.",
+      "retrieved_contexts": [
+        "ỚP LINH HOẠT • Collagen & Vitamin C cho khớp linh hoạt • Hoạt chất MFGM giúp tăng 2 lần độ dẻo dai Uống Anlene Gold – Trẻ khỏe vững vàng Anlene là nhãn hiệu được Hội loãng xương quốc tế khuyên dùng, giúp giảm nguy cơ lão hóa xương và tăng cường sức khỏe cơ sau 4 tuần HƯỚNG DẪN SỬ DỤNG • Cho 4 muỗng",
+        "iảm các bệnh về xương khớp và giảm tình trạng khô mắt. - Glucosamine: hỗ trợ sự phát triển của các mô giữa sụn khớp và dịch khớp. Khi Glucosamine và Chondroitin phối hợp với nhau để thúc đẩy sức khỏe tổng thể của sụn và khớp.",
+        "iêm - nguyên nhân hàng đầu làm phá hủy xương khớp. Nhờ đó giúp hỗ trợ giảm đau nhanh, bền vững, an toàn , bảo vệ xương khớp chắc khỏe, toàn diện, giảm khả năng tái phát bệnh. Khi sức khỏe xương khớp được cải thiện, người bệnh sẽ vận động linh hoạt, tự chủ cuộc sống.",
+        ", Khớp linh hoạt, Nhanh nhẹn hơn, Thêm năng lượng. Thành phần Đặc điểm nổi bật Tăng cường sức khỏe xương khớp: Với phức hợp dinh dưỡng và hoạt chất MFGM đã được kiểm nghiệm lâm sàng, giúp tăng 40% khối lượng cơ, hỗ trợ xương khớp chắc khỏe, dẻo dai.",
+        " và giảm chất lượng cuộc sống, đặc biệt là phụ nữ. Sản phẩm dinh.... Loãng xương và viêm khớp là các bệnh lý thường gặp dễ dẫn đến nguy cơ gãy xương, thoái hóa khớp làm ảnh hưởng nhu cầu vận động hàng ngày và giảm chất lượng cuộc sống, đặc biệt là phụ nữ."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.16822429906542058,
+        "faithfulness": 5.0,
+        "relevance": 5.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Sữa Anlene hướng vanilla có đối tượng sử dụng nào?",
+      "ground_truth_answers": [
+        "Sữa Bột Anlene Hương Vanilla",
+        "Anlene Hương Vanilla"
+      ],
+      "retrieved_products": [
+        "Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g)",
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate (Hộp Giấy 440g)",
+        "[Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon",
+        "Sữa đặc có đường Dutch Lady cao cấp 380g",
+        "Nước Hoa Nữ Anna Sui Sky 75ml"
+      ],
+      "retrieval_metrics": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "mrr": 1.0,
+        "precision@1": 1.0,
+        "precision@3": 0.6666666666666666,
+        "precision@5": 0.4
+      },
+      "generated_answer": "Sữa Anlene Hương Vanilla (Hộp Giấy 440g) được khuyến nghị sử dụng cho người lớn và trẻ em từ 1 tuổi trở lên.",
+      "context_used": "Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g). Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g). Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g)Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g) gồm các dưỡng chất thiết yếu như canxi, vitamin D, đạm, magiê và FOS inulin giúp xư....\n\nAnlene Gold Vị Sô-cô-la Sữa Anlene Gold Vị Cà-phê Thành phần Thành phần chính của sản phẩm gồm: Sữa bò (58%) (sữa gầy, sữa nguyên kem), maltodextrin. bộ cacao đã tách béo, đường sucrose, khoáng chất, hương socola tổng hợp, Lecithin đậu nành,...\n\ngon: Hương vani tự nhiên, dễ uống, không gây ngấy. Tiện lợi: Dạng bột, dễ pha chế, có thể sử dụng bất cứ khi nào.\n\na.Sản phẩm không chứa hóa chất, chất bảo quản .... Sữa Đặc Có Đường Dutch Lady Cao Cấp chứa kem đặc có đường với sự cân bằng tuyệt vời giữa vị ngọt và vị béo, giúp tách cà phê của bạn thêm đậm đà, hài hòa.\n\nương Gourmand được nhắc đến và tỏa sáng nhiều hơn. Nét vị của Bắp Rang Bơ và Vanilla được sử dụng ở đây, thêm những nét trẻ trung, năng động, có phần hồi xuân, nhí nhảnh của lớp hương Hoa và Trái Cây nữ tính, đầy tự tin lúc trước.",
+      "retrieved_contexts": [
+        "Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g). Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g). Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g)Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g) gồm các dưỡng chất thiết yếu như canxi, vitamin D, đạm, magiê và FOS inulin giúp xư....",
+        "Anlene Gold Vị Sô-cô-la Sữa Anlene Gold Vị Cà-phê Thành phần Thành phần chính của sản phẩm gồm: Sữa bò (58%) (sữa gầy, sữa nguyên kem), maltodextrin. bộ cacao đã tách béo, đường sucrose, khoáng chất, hương socola tổng hợp, Lecithin đậu nành,...",
+        "gon: Hương vani tự nhiên, dễ uống, không gây ngấy. Tiện lợi: Dạng bột, dễ pha chế, có thể sử dụng bất cứ khi nào.",
+        "a.Sản phẩm không chứa hóa chất, chất bảo quản .... Sữa Đặc Có Đường Dutch Lady Cao Cấp chứa kem đặc có đường với sự cân bằng tuyệt vời giữa vị ngọt và vị béo, giúp tách cà phê của bạn thêm đậm đà, hài hòa.",
+        "ương Gourmand được nhắc đến và tỏa sáng nhiều hơn. Nét vị của Bắp Rang Bơ và Vanilla được sử dụng ở đây, thêm những nét trẻ trung, năng động, có phần hồi xuân, nhí nhảnh của lớp hương Hoa và Trái Cây nữ tính, đầy tự tin lúc trước."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.35294117647058826,
+        "faithfulness": 4.0,
+        "relevance": 4.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Nước hoa Jimmy Choo I Want Choo có nồng độ gì?",
+      "ground_truth_answers": [
+        "Nước Hoa Nữ Jimmy Choo I Want Choo EDP",
+        "Jimmy Choo I Want Choo"
+      ],
+      "retrieved_products": [
+        "Nước Hoa Nữ Jimmy Choo I Want Choo EDP 100ml",
+        "Nước Hoa Nam Jimmy Choo Man Ice Edt 100Ml",
+        "Nước Hoa Nam Versace Eros Parfum 100ml",
+        "Nước Hoa Vùng Kín Dionel Secret Love White Edition Inner Parfume Oil 5ml",
+        "Nước Hoa Nam Hugo Boss The Scent 100ml"
+      ],
+      "retrieval_metrics": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "mrr": 1.0,
+        "precision@1": 1.0,
+        "precision@3": 0.6666666666666666,
+        "precision@5": 0.4
+      },
+      "generated_answer": "Tôi không tìm thấy thông tin về nồng độ của nước hoa Jimmy Choo I Want Choo trong dữ liệu hiện tại.",
+      "context_used": " Hương giữa: Hoa huệ, Hoa nhài Sambac Hương cuối: Vanila, Benzoin Mở màn cho năm 2021 tráng lệ, Jimmy Choo ra mắt tuyệt tác nước hoa mới mang tên I WANT CHOO . Hào nhoáng và sôi nổi, tự tin và quyến rũ, I WANT CHOO là món trang sức đắt giá và là hiện thân hoàn hảo của người phụ nữ Jimmy Choo.\n\náng được nêu danh trong các anh em nhà Jimmy Choo. Jimmy Choo Man Ice được dẫn dắt bởi tông hương chính từ nhà Cam chanh, dĩ nhiên Man Ice gây ấn tượng cho người dùng bởi vẻ đẹp thanh tao, ngọt dịu, mọng nước đầy sảng khoái đặc trưng.\n\n phóng khoáng thường thấy ở những phiên bản trước. Thầm lặng và đứng đắn hơn, nhưng vẫn chẳng thiếu thứ đã làm nên thương hiệu của Eros, một mùi hương ngọt ngào. Đậu Tonka hoàn toàn lo phần ngọt ngào của Eros Parfum, bên cạnh một chút ngọt ngậy gợi nhớ thời tuổi trẻ của Vanilla và Hổ phách.\n\nuần Khiết, mang tới cảm xúc ngọt ngào, say đắm.... Nước Hoa Vùng Kín Dionel Secret Love White Edition Inner Parfume Oil Thương hiệu: Dionel Xuất xứ: Hàn Quốc Dung tích: 5ml White Edition: Hương Hoa Cam Thuần Khiết, mang tới cảm xúc ngọt ngào, say đắm.\n\nNước Hoa Nam Hugo Boss The Scent 100ml. Nước Hoa Nam Hugo Boss The Scent 100ml. Nhóm nước hoa: Hương thơm cay nồngGiới tính: NamNăm ra mắt: 2015Nồng độ: EDTNhà pha chế: Pascal GaurinPhong Cách: Nam Tính, Cuốn Hút, Tự TinHương Đầu: Gừng, Cam Bergamot, Quả quýt hồngHương giữ....",
+      "retrieved_contexts": [
+        " Hương giữa: Hoa huệ, Hoa nhài Sambac Hương cuối: Vanila, Benzoin Mở màn cho năm 2021 tráng lệ, Jimmy Choo ra mắt tuyệt tác nước hoa mới mang tên I WANT CHOO . Hào nhoáng và sôi nổi, tự tin và quyến rũ, I WANT CHOO là món trang sức đắt giá và là hiện thân hoàn hảo của người phụ nữ Jimmy Choo.",
+        "áng được nêu danh trong các anh em nhà Jimmy Choo. Jimmy Choo Man Ice được dẫn dắt bởi tông hương chính từ nhà Cam chanh, dĩ nhiên Man Ice gây ấn tượng cho người dùng bởi vẻ đẹp thanh tao, ngọt dịu, mọng nước đầy sảng khoái đặc trưng.",
+        " phóng khoáng thường thấy ở những phiên bản trước. Thầm lặng và đứng đắn hơn, nhưng vẫn chẳng thiếu thứ đã làm nên thương hiệu của Eros, một mùi hương ngọt ngào. Đậu Tonka hoàn toàn lo phần ngọt ngào của Eros Parfum, bên cạnh một chút ngọt ngậy gợi nhớ thời tuổi trẻ của Vanilla và Hổ phách.",
+        "uần Khiết, mang tới cảm xúc ngọt ngào, say đắm.... Nước Hoa Vùng Kín Dionel Secret Love White Edition Inner Parfume Oil Thương hiệu: Dionel Xuất xứ: Hàn Quốc Dung tích: 5ml White Edition: Hương Hoa Cam Thuần Khiết, mang tới cảm xúc ngọt ngào, say đắm.",
+        "Nước Hoa Nam Hugo Boss The Scent 100ml. Nước Hoa Nam Hugo Boss The Scent 100ml. Nhóm nước hoa: Hương thơm cay nồngGiới tính: NamNăm ra mắt: 2015Nồng độ: EDTNhà pha chế: Pascal GaurinPhong Cách: Nam Tính, Cuốn Hút, Tự TinHương Đầu: Gừng, Cam Bergamot, Quả quýt hồngHương giữ...."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.43795620437956206,
+        "faithfulness": 4.0,
+        "relevance": 2.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Anlene Gold Movepro có thành phần gì?",
+      "ground_truth_answers": [
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate",
+        "Anlene Gold Movepro"
+      ],
+      "retrieved_products": [
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate (Hộp Giấy 440g)",
+        "Combo 3 TPBS Anlene Gold hương vani 1.2kg - Tặng máy vắt cam",
+        "[Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon",
+        "Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g)",
+        "(HOT TREND) Balo da cao cấp - Balo nữ thời trang YUUMY YBA4 - balo da bò bền đẹp"
+      ],
+      "retrieval_metrics": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "mrr": 1.0,
+        "precision@1": 1.0,
+        "precision@3": 1.0,
+        "precision@5": 0.8
+      },
+      "generated_answer": "Xin lỗi, đã có lỗi khi tạo câu trả lời: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+      "context_used": "Sữa Bột Anlene Gold Movepro Hương Chocolate (Hộp Giấy 440g). Sữa Bột Anlene Gold Movepro Hương Chocolate (Hộp Giấy 440g). Sữa Bột Anlene Gold Movepro Hương Chocolate (Hộp Giấy 440g)Sữa Bột Anlene Gold 3X Hương Socola là sản phẩm sữa với công thức MOVEPRO đặc biệt, chứa nhiều dưỡng chất thiết yếu hỗ trợ hệ Cơ-Xương-Khớp....\n\nCombo 3 TPBS Anlene Gold hương vani 1.2kg - Tặng máy vắt cam. Combo 3 TPBS Anlene Gold hương vani 1.2kg - Tặng máy vắt cam. SỮA ANLENE GOLDAnlene Gold là sản phẩm sữa chứa hệ dưỡng chất MovePro cung cấp dinh dưỡng tăng cường với hoạt chất MFGM được KIỂM NGHIỆM LÂM SÀNG giúp cơ thể thêm linh hoạt và Vitamin B tiếp thêm năng....\n\n[Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. [Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. * Bao bì có thể thay đổi tùy đợt hàngSữa Bột Anlene Gold 5X Hương Vanilla (Hộp Thiếc 800g)Giới thiệuAnlene Gold 5X/Anlene 5 khoẻ vàng mới là sản phẩm sữa chứa phức hợp dinh dưỡng với hoạt chất MFG....\n\ni, vitamin D, đạm, magiê và FOS inulin giúp xư.... Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g) Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g) gồm các dưỡng chất thiết yếu như canxi, vitamin D, đạm, magiê và FOS inulin giúp xương chắc khoẻ hơn mỗi ngày, phòng chống loãng\n\nông gây cảm giác nặng nề, khó chịu cho người dùng. - NHỎ GỌN & XINH XẮN: Chiếc balo nhỏ xinh nhưng lại đủ chứa cho nàng các thứ cần thiết.",
+      "retrieved_contexts": [
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate (Hộp Giấy 440g). Sữa Bột Anlene Gold Movepro Hương Chocolate (Hộp Giấy 440g). Sữa Bột Anlene Gold Movepro Hương Chocolate (Hộp Giấy 440g)Sữa Bột Anlene Gold 3X Hương Socola là sản phẩm sữa với công thức MOVEPRO đặc biệt, chứa nhiều dưỡng chất thiết yếu hỗ trợ hệ Cơ-Xương-Khớp....",
+        "Combo 3 TPBS Anlene Gold hương vani 1.2kg - Tặng máy vắt cam. Combo 3 TPBS Anlene Gold hương vani 1.2kg - Tặng máy vắt cam. SỮA ANLENE GOLDAnlene Gold là sản phẩm sữa chứa hệ dưỡng chất MovePro cung cấp dinh dưỡng tăng cường với hoạt chất MFGM được KIỂM NGHIỆM LÂM SÀNG giúp cơ thể thêm linh hoạt và Vitamin B tiếp thêm năng....",
+        "[Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. [Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. * Bao bì có thể thay đổi tùy đợt hàngSữa Bột Anlene Gold 5X Hương Vanilla (Hộp Thiếc 800g)Giới thiệuAnlene Gold 5X/Anlene 5 khoẻ vàng mới là sản phẩm sữa chứa phức hợp dinh dưỡng với hoạt chất MFG....",
+        "i, vitamin D, đạm, magiê và FOS inulin giúp xư.... Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g) Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g) gồm các dưỡng chất thiết yếu như canxi, vitamin D, đạm, magiê và FOS inulin giúp xương chắc khoẻ hơn mỗi ngày, phòng chống loãng",
+        "ông gây cảm giác nặng nề, khó chịu cho người dùng. - NHỎ GỌN & XINH XẮN: Chiếc balo nhỏ xinh nhưng lại đủ chứa cho nàng các thứ cần thiết."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.24,
+        "faithfulness": 1.0,
+        "relevance": 1.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Gợi ý cho tôi một cuốn sách về kỹ năng sống dưới 200k",
+      "ground_truth_answers": [
+        "Sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim"
+      ],
+      "retrieved_products": [
+        "Sách Sức Mạnh Tiềm Thức (Tái Bản) (Bìa Mềm)",
+        "Sách Học Cách Học (Tái bản)",
+        "Sách Làm Chủ Bình Minh - Sống Đời Xuất Chúng - CLB 5 Giờ Sáng (Robin Sharma)",
+        "Sách Đừng Bao Giờ Chia Đôi Lợi Ích Trong Mọi Cuộc Đàm Phán",
+        "Sách Một Thoáng Ta Rực Rỡ Ở Nhân Gian"
+      ],
+      "retrieval_metrics": {
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": false,
+        "mrr": 0.0,
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0
+      },
+      "generated_answer": "Xin lỗi, đã có lỗi khi tạo câu trả lời: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+      "context_used": "Sách Sức Mạnh Tiềm Thức (Tái Bản) (Bìa Mềm). Sách Sức Mạnh Tiềm Thức (Tái Bản) (Bìa Mềm). Sức Mạnh Tiềm Thức (Tái Bản)Là một trong những quyển sách về nghệ thuật sống nhận được nhiều lời ngợi khen và bán chạy nhất mọi thời đại, Sức Mạnh Tiềm Thức đã giúp hàng triệu độc giả trên thế giới đ....\n\n một cuốn sách mang tính đột phá và thực tiễn cao. Cuốn Sách Này Dành Cho Ai? Cuốn sách này dành cho bất kỳ ai muốn nâng cấp kỹ năng học tập của mình: Học sinh, sinh viên : Muốn đạt kết quả cao hơn trong học tập và vượt qua các kỳ thi một cách nhẹ nhàng.\n\nSách Làm Chủ Bình Minh - Sống Đời Xuất Chúng - CLB 5 Giờ Sáng (Robin Sharma). Sách Làm Chủ Bình Minh - Sống Đời Xuất Chúng - CLB 5 Giờ Sáng (Robin Sharma). Nhà xuất bản Trẻ giới thiệu đến Quý vị sách mới của Robin Sharma, một trong những tác giả bestseller về mảng sách kỹ năng hiện nay tại Việt Nam và trên thế giới. Ông được nhiều độc giả biết đến qua cá....\n\nch hàng khó tính nhất ký hợp đồng với công ty bạn. Cuốn sách này thậm chí có thể giúp bạn đàm phán giải cứu con tin thành công! Tại sao ư? Bởi cuốn sách này tập hợp những kỹ năng đúc kết từ kinh nghiệm của một chuyên gia đàm phán giải cứu con tin có thâm niên làm việc hơn 20 năm tại Cục Điều tra\n\nblic Library Prize và New England Book Award 2019. Lật trang sách và để câu chữ dẫn dắt bạn qua nỗi đau, sự mạnh mẽ, và vẻ đẹp ngắn ngủi nhưng quyến rũ của cuộc đời. “Vuong thực sự có thiên tài quan sát.",
+      "retrieved_contexts": [
+        "Sách Sức Mạnh Tiềm Thức (Tái Bản) (Bìa Mềm). Sách Sức Mạnh Tiềm Thức (Tái Bản) (Bìa Mềm). Sức Mạnh Tiềm Thức (Tái Bản)Là một trong những quyển sách về nghệ thuật sống nhận được nhiều lời ngợi khen và bán chạy nhất mọi thời đại, Sức Mạnh Tiềm Thức đã giúp hàng triệu độc giả trên thế giới đ....",
+        " một cuốn sách mang tính đột phá và thực tiễn cao. Cuốn Sách Này Dành Cho Ai? Cuốn sách này dành cho bất kỳ ai muốn nâng cấp kỹ năng học tập của mình: Học sinh, sinh viên : Muốn đạt kết quả cao hơn trong học tập và vượt qua các kỳ thi một cách nhẹ nhàng.",
+        "Sách Làm Chủ Bình Minh - Sống Đời Xuất Chúng - CLB 5 Giờ Sáng (Robin Sharma). Sách Làm Chủ Bình Minh - Sống Đời Xuất Chúng - CLB 5 Giờ Sáng (Robin Sharma). Nhà xuất bản Trẻ giới thiệu đến Quý vị sách mới của Robin Sharma, một trong những tác giả bestseller về mảng sách kỹ năng hiện nay tại Việt Nam và trên thế giới. Ông được nhiều độc giả biết đến qua cá....",
+        "ch hàng khó tính nhất ký hợp đồng với công ty bạn. Cuốn sách này thậm chí có thể giúp bạn đàm phán giải cứu con tin thành công! Tại sao ư? Bởi cuốn sách này tập hợp những kỹ năng đúc kết từ kinh nghiệm của một chuyên gia đàm phán giải cứu con tin có thâm niên làm việc hơn 20 năm tại Cục Điều tra",
+        "blic Library Prize và New England Book Award 2019. Lật trang sách và để câu chữ dẫn dắt bạn qua nỗi đau, sự mạnh mẽ, và vẻ đẹp ngắn ngủi nhưng quyến rũ của cuộc đời. “Vuong thực sự có thiên tài quan sát."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.19161676646706585,
+        "faithfulness": 1.0,
+        "relevance": 1.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Có sản phẩm sữa bột cho người lớn tuổi nào không?",
+      "ground_truth_answers": [
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate",
+        "Sữa Bột Anlene Hương Vanilla"
+      ],
+      "retrieved_products": [
+        "Sữa Bột Enfagrow A+ Neuropro 3 1.7kg với DHA giúp phát triển não bộ cho trẻ từ 1-3 tuổi",
+        "Sữa bột Enfagrow A+ Neuropro 3 2.2kg với DHA giúp phát triển não bộ cho trẻ từ 1-3 tuổi",
+        "Sữa Bột Enfagrow A+ Neuropro 3 830g với DHA giúp phát triển não bộ cho trẻ từ 1-3 tuổi",
+        "Sữa bột Enfagrow A+ Neuropro 4 2.2kg với DHA giúp phát triển não bộ cho trẻ từ 2–6 tuổi",
+        "Sữa bột Enfamil A+ Neuropro 2 1.7kg với DHA giúp phát triển não bộ cho trẻ từ 6 –12 tháng tuổi"
+      ],
+      "retrieval_metrics": {
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": false,
+        "mrr": 0.0,
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0
+      },
+      "generated_answer": "Toi khong tim thay san pham phu hop trong du lieu hien tai.",
+      "context_used": "ất quan trọng trong quá trình pha chế sữa cho trẻ. Sản phẩm không vô trùng và không nên dùng cho trẻ sinh non hoặc trẻ nhỏ có vấn đề về miễn dịch trừ khi có chỉ định và có sự giám sát của bác sĩ. Nên hỏi ý kiến bác sĩ để biết loại sản phẩm sữa bột phù hợp với con bạn.\n\nất quan trọng trong quá trình pha chế sữa cho trẻ. Sản phẩm không vô trùng và không nên dùng cho trẻ sinh non hoặc trẻ nhỏ có vấn đề về miễn dịch trừ khi có chỉ định và có sự giám sát của bác sĩ. Nên hỏi ý kiến bác sĩ để biết loại sản phẩm sữa bột phù hợp với con bạn.\n\nất quan trọng trong quá trình pha chế sữa cho trẻ. Sản phẩm không vô trùng và không nên dùng cho trẻ sinh non hoặc trẻ nhỏ có vấn đề về miễn dịch trừ khi có chỉ định và có sự giám sát của bác sĩ. Nên hỏi ý kiến bác sĩ để biết loại sản phẩm sữa bột phù hợp với con bạn.\n\nất quan trọng trong quá trình pha chế sữa cho trẻ. Sản phẩm không vô trùng và không nên dùng cho trẻ sinh non hoặc trẻ nhỏ có vấn đề về miễn dịch trừ khi có chỉ định và có sự giám sát của bác sĩ. Nên hỏi ý kiến bác sĩ để biết loại sản phẩm sữa bột phù hợp với con bạn.\n\nất quan trọng trong quá trình pha chế sữa cho trẻ. Sản phẩm không vô trùng và không nên dùng cho trẻ sinh non hoặc trẻ nhỏ có vấn đề về miễn dịch trừ khi có chỉ định và có sự giám sát của bác sĩ. Nên hỏi ý kiến bác sĩ để biết loại sản phẩm sữa bột phù hợp với con bạn.",
+      "retrieved_contexts": [
+        "ất quan trọng trong quá trình pha chế sữa cho trẻ. Sản phẩm không vô trùng và không nên dùng cho trẻ sinh non hoặc trẻ nhỏ có vấn đề về miễn dịch trừ khi có chỉ định và có sự giám sát của bác sĩ. Nên hỏi ý kiến bác sĩ để biết loại sản phẩm sữa bột phù hợp với con bạn.",
+        "ất quan trọng trong quá trình pha chế sữa cho trẻ. Sản phẩm không vô trùng và không nên dùng cho trẻ sinh non hoặc trẻ nhỏ có vấn đề về miễn dịch trừ khi có chỉ định và có sự giám sát của bác sĩ. Nên hỏi ý kiến bác sĩ để biết loại sản phẩm sữa bột phù hợp với con bạn.",
+        "ất quan trọng trong quá trình pha chế sữa cho trẻ. Sản phẩm không vô trùng và không nên dùng cho trẻ sinh non hoặc trẻ nhỏ có vấn đề về miễn dịch trừ khi có chỉ định và có sự giám sát của bác sĩ. Nên hỏi ý kiến bác sĩ để biết loại sản phẩm sữa bột phù hợp với con bạn.",
+        "ất quan trọng trong quá trình pha chế sữa cho trẻ. Sản phẩm không vô trùng và không nên dùng cho trẻ sinh non hoặc trẻ nhỏ có vấn đề về miễn dịch trừ khi có chỉ định và có sự giám sát của bác sĩ. Nên hỏi ý kiến bác sĩ để biết loại sản phẩm sữa bột phù hợp với con bạn.",
+        "ất quan trọng trong quá trình pha chế sữa cho trẻ. Sản phẩm không vô trùng và không nên dùng cho trẻ sinh non hoặc trẻ nhỏ có vấn đề về miễn dịch trừ khi có chỉ định và có sự giám sát của bác sĩ. Nên hỏi ý kiến bác sĩ để biết loại sản phẩm sữa bột phù hợp với con bạn."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.29411764705882354,
+        "faithfulness": 1.0,
+        "relevance": 2.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Cho tôi gợi ý một sản phẩm sữa tốt cho xương khớp",
+      "ground_truth_answers": [
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate",
+        "Sữa Bột Anlene Hương Vanilla"
+      ],
+      "retrieved_products": [
+        "Sữa bột Vinamilk CanxiPro 900g (Hộp thiếc) - Sữa bổ sung Canxi cho người già cao tuổi, Tốt cho xương khớp - 900g",
+        "Thùng 10 Hộp Sữa Đậu Nành Vinasoy Fami Nguyên Chất (1 lít / Hộp)",
+        "Thùng 24 Hộp Sữa Bắp Non LOF 180ml/hộp",
+        "Sữa bột Nestlé NAN OPTIPRO PLUS 2 800g/lon với 5HMO Sản Xuất Tại Thụy Sĩ (6 - 12 tháng)",
+        "Bộ sản phẩm giảm mụn sau 12H & phục hồi da sau mụn La Roche-Posay"
+      ],
+      "retrieval_metrics": {
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": false,
+        "mrr": 0.0,
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0
+      },
+      "generated_answer": "Toi khong tim thay san pham phu hop trong du lieu hien tai.",
+      "context_used": "y phân để giúp phòng ngừa thoái hóa khớp hiệu quả. (i) so với sản phẩm Vinamilk Dinh Dưỡng Canxi, Phốt pho, Magie và Kẽm: là các dưỡng chất thiết yếu để xây dựng 1 hệ xương chắc khỏe.\n\năng cường sức đề kháng, hệ cơ xương và làm đẹp da. Được sản xuất theo công nghệ hiện đại và kiểm định nghiêm ngặt để cho ra đời những giọt sữa đậu nành nguyên chất sánh mịn, thơm ngon. Hướng dẫn sử dụng: Dùng uống trực tiếp, ngon hơn khi uống lạnh.\n\n CHẤT XƠ giúp hỗ trợ tiêu hóa, kiểm soát cân nặng. Thức uống dinh dưỡng sữa bắp non LOF thơm ngon, thanh mát.\n\nnh phần: SỮA tách kem (MILK skimmed), LACTOSE (từ SỮA-from MILK), ĐẠM chất lượng OPTIPRO(ĐẠM WHEY, ĐẠM CASEIN từ SỮA-WHEY, CASEIN PROTEIN from MILK), Dầu hướng dương giàu axit oleic, Dầu hạt cải có hàm lượng axit erucic thấp, Tricalci citrat, Chất nhũ hóa Lecithin ĐẬU NÀNH (SOYA lecithin),\n\nảm với ánh nắng do cơ địa hoặc tác nhân bên ngoài. Loại sản phẩm: - Kem chống nắng cho da mặt dạng sữa không nhờn rít Thành phần: - Công nghệ XL-PROTECTTM AntiUVB / UVA / long UVA, chống tia hồng ngoại & ô nhiễm - Công nghệ INTELIMER Công dụng: - Kháng trôi cao (nước, mồ hôi, cát,…) - Kết cấu mỏng",
+      "retrieved_contexts": [
+        "y phân để giúp phòng ngừa thoái hóa khớp hiệu quả. (i) so với sản phẩm Vinamilk Dinh Dưỡng Canxi, Phốt pho, Magie và Kẽm: là các dưỡng chất thiết yếu để xây dựng 1 hệ xương chắc khỏe.",
+        "ăng cường sức đề kháng, hệ cơ xương và làm đẹp da. Được sản xuất theo công nghệ hiện đại và kiểm định nghiêm ngặt để cho ra đời những giọt sữa đậu nành nguyên chất sánh mịn, thơm ngon. Hướng dẫn sử dụng: Dùng uống trực tiếp, ngon hơn khi uống lạnh.",
+        " CHẤT XƠ giúp hỗ trợ tiêu hóa, kiểm soát cân nặng. Thức uống dinh dưỡng sữa bắp non LOF thơm ngon, thanh mát.",
+        "nh phần: SỮA tách kem (MILK skimmed), LACTOSE (từ SỮA-from MILK), ĐẠM chất lượng OPTIPRO(ĐẠM WHEY, ĐẠM CASEIN từ SỮA-WHEY, CASEIN PROTEIN from MILK), Dầu hướng dương giàu axit oleic, Dầu hạt cải có hàm lượng axit erucic thấp, Tricalci citrat, Chất nhũ hóa Lecithin ĐẬU NÀNH (SOYA lecithin),",
+        "ảm với ánh nắng do cơ địa hoặc tác nhân bên ngoài. Loại sản phẩm: - Kem chống nắng cho da mặt dạng sữa không nhờn rít Thành phần: - Công nghệ XL-PROTECTTM AntiUVB / UVA / long UVA, chống tia hồng ngoại & ô nhiễm - Công nghệ INTELIMER Công dụng: - Kháng trôi cao (nước, mồ hôi, cát,…) - Kết cấu mỏng"
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.29411764705882354,
+        "faithfulness": 5.0,
+        "relevance": 1.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Tiki có bán tã cho người lớn không?",
+      "ground_truth_answers": [
+        "Tã Dán Người Lớn SunMate AX2"
+      ],
+      "retrieved_products": [
+        "Đồ Chơi Rút Gỗ Số Thú Vị Thông Minh Cho Bé, Có 3 Cỡ Lựa Chọn (Nhỏ, Trung Và Lớn) - Chính Hãng",
+        "Máy Hút Bụi Cầm Tay Không Dây 9000Pa, Hút Bụi Ô Tô, Giường Nệm, Sofa, Laptop - HÀNG CHÍNH HÃNG",
+        "Túi 20 Khăn Giấy Nén Hàn Quốc Cao Cấp Loại Dày 2 Lớp 20*20cm - Hàng Chính Hãng",
+        "Combo 02 Hộp nhựa chứa đựng, bảo quản thực phẩm khô cao cấp Inomata Canister - Made in Japan",
+        "Nước Hoa Nữ Charme Grand"
+      ],
+      "retrieval_metrics": {
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": false,
+        "mrr": 0.0,
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0
+      },
+      "generated_answer": "Xin lỗi, đã có lỗi khi tạo câu trả lời: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+      "context_used": "ởng cao quý nhất để LILAHOME tiếp tục phát triển”. Cảm ơn Qúy khách hàng đã tin tưởng và lựa chọn những sản phẩm của LILAHOME ạ! Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\ncam kết với khách hàng : ️ - Sản phẩm giống mô tả. ️ - Đảm bảo chất lượng, dịch vụ tốt nhất. ️ - Giao hàng trên toàn quốc. - Đổi trả theo đúng quy định của TIKI. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\nởng cao quý nhất để LILAHOME tiếp tục phát triển”. Cảm ơn Qúy khách hàng đã tin tưởng và lựa chọn những sản phẩm của LILAHOME ạ! Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\ntrầy xước & cũ bẩn, mất tính thẩm mỹ của sản phẩm. Sản phẩm sản xuất theo công nghệ hiện đại của Nhật Bản cho chất lượng cao, đảm bảo các thông số an toàn kỹ thuật. Người dùng hoàn toàn yên tâm khi sử dụng. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\ng liệu cao cấp được nhập khẩu chính ngạch từ Pháp. - Công nghệ và dây chuyền sản xuất đạt tiêu chuẩn Châu Âu. + Bảo quản: Để nơi khô ráo, thoáng mát. Tránh tiếp xúc trực tiếp với mắt và tránh xa tầm tay trẻ em Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+      "retrieved_contexts": [
+        "ởng cao quý nhất để LILAHOME tiếp tục phát triển”. Cảm ơn Qúy khách hàng đã tin tưởng và lựa chọn những sản phẩm của LILAHOME ạ! Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        "cam kết với khách hàng : ️ - Sản phẩm giống mô tả. ️ - Đảm bảo chất lượng, dịch vụ tốt nhất. ️ - Giao hàng trên toàn quốc. - Đổi trả theo đúng quy định của TIKI. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        "ởng cao quý nhất để LILAHOME tiếp tục phát triển”. Cảm ơn Qúy khách hàng đã tin tưởng và lựa chọn những sản phẩm của LILAHOME ạ! Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        "trầy xước & cũ bẩn, mất tính thẩm mỹ của sản phẩm. Sản phẩm sản xuất theo công nghệ hiện đại của Nhật Bản cho chất lượng cao, đảm bảo các thông số an toàn kỹ thuật. Người dùng hoàn toàn yên tâm khi sử dụng. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        "g liệu cao cấp được nhập khẩu chính ngạch từ Pháp. - Công nghệ và dây chuyền sản xuất đạt tiêu chuẩn Châu Âu. + Bảo quản: Để nơi khô ráo, thoáng mát. Tránh tiếp xúc trực tiếp với mắt và tránh xa tầm tay trẻ em Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.16249999999999998,
+        "faithfulness": 1.0,
+        "relevance": 1.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Gợi ý nước hoa nữ dưới 3 triệu cho người trên 25 tuổi",
+      "ground_truth_answers": [
+        "Nước Hoa Nữ Jimmy Choo I Want Choo EDP"
+      ],
+      "retrieved_products": [
+        "Nước Hoa Nữ Charme Good Girl hương ngọt dịu nhẹ",
+        "Nước Hoa Nữ Charme Grand",
+        "Nước Hoa Nữ Carolina Herrera 212 Vip Rose Edp 80Ml",
+        "Nước hoa nữ LUXUR EMPRESS 60ml",
+        "Nước Hoa Nữ Salvatore Ferragamo Signorina - Eau De Parfum (100ml)"
+      ],
+      "retrieval_metrics": {
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": false,
+        "mrr": 0.0,
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0
+      },
+      "generated_answer": "Xin lỗi, đã có lỗi khi tạo câu trả lời: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+      "context_used": " là một sự lựa chọn đẳng cấp bạn không thể bỏ qua. Thương hiệu: Nước hoa Charme Loại: Nước hoa nữ Dung tích: 100ml Giới tính: Nữ Độ tuổi khuyên dùng: Trên 25 Nồng độ: EDP Độ lưu hương: Lâu - 7 giờ đến 12 giờ Độ toả hương: Xa - Toả hương trong vòng bán kính 2 mét Thời điểm khuyên dùng: Ngày, Đêm,\n\nsay đắm, là kết tinh của một tình yêu vĩnh cửu. 1. THÔNG TIN NƯỚC HOA - Thương hiệu: Nước hoa Charme - Loại: Nước hoa nữ - Độ tuổi khuyên dùng: Trên 25 - Dung tích: 100ml - Giới tính: Nữ - Nồng độ: EDP - Độ lưu hương: Lâu - 7 giờ đến 12 giờ - Độ toả hương: Xa - Toả hương trong vòng bán kính 2 mét -\n\n dùng: Ngày, Đêm, Xuân, HạPhong cách: Tính tế .... Nhóm nước hoa: Hương hoa cỏ trái cây Giới tính: Nữ Độ tuổi khuyên dùng: Trên 25 Năm ra mắt: 2014 Nồng độ: EDP Nhà pha chế: Lucas Sieuzac Thời điểm khuyên dùng: Ngày, Đêm, Xuân, Hạ Phong cách: Tính tế , Sang trọng , Quyến rũ Hương Đầu: Rượu sâm\n\n SANDALWOOD, AMBER, STYRAX, CEDAR, MUSK, VERAMOSS PHONG CÁCH : Trẻ trung pha chút cổ điển, Quyến rũ,thành đạt KHUYÊN DÙNG : Ngày- đêm , các mùa tròng năm ,thích hợp sử dụng các sự kiện Quan Trọng -MIÊU TẢ : LUXUR EMPRESS phiên bản nữ của EURO VIET PERFUMEY cho các quý cô .\n\nng vòng một cánh tayPhong cách: Nữ tính , Tươi.... Nhóm nước hoa: Hương hoa cỏ trái cây Giới tính: Nữ Năm ra mắt: 2011 Nồng độ: EDP Độ lưu hương: Tạm ổn – 3 giờ đến 6 giờ Độ toả hương: Gần – Toả hương trong vòng một cánh tay Phong cách: Nữ tính , Tươi tắn , Gợi cảm Hương Đầu: Hồng tiêu, Quả lý chua",
+      "retrieved_contexts": [
+        " là một sự lựa chọn đẳng cấp bạn không thể bỏ qua. Thương hiệu: Nước hoa Charme Loại: Nước hoa nữ Dung tích: 100ml Giới tính: Nữ Độ tuổi khuyên dùng: Trên 25 Nồng độ: EDP Độ lưu hương: Lâu - 7 giờ đến 12 giờ Độ toả hương: Xa - Toả hương trong vòng bán kính 2 mét Thời điểm khuyên dùng: Ngày, Đêm,",
+        "say đắm, là kết tinh của một tình yêu vĩnh cửu. 1. THÔNG TIN NƯỚC HOA - Thương hiệu: Nước hoa Charme - Loại: Nước hoa nữ - Độ tuổi khuyên dùng: Trên 25 - Dung tích: 100ml - Giới tính: Nữ - Nồng độ: EDP - Độ lưu hương: Lâu - 7 giờ đến 12 giờ - Độ toả hương: Xa - Toả hương trong vòng bán kính 2 mét -",
+        " dùng: Ngày, Đêm, Xuân, HạPhong cách: Tính tế .... Nhóm nước hoa: Hương hoa cỏ trái cây Giới tính: Nữ Độ tuổi khuyên dùng: Trên 25 Năm ra mắt: 2014 Nồng độ: EDP Nhà pha chế: Lucas Sieuzac Thời điểm khuyên dùng: Ngày, Đêm, Xuân, Hạ Phong cách: Tính tế , Sang trọng , Quyến rũ Hương Đầu: Rượu sâm",
+        " SANDALWOOD, AMBER, STYRAX, CEDAR, MUSK, VERAMOSS PHONG CÁCH : Trẻ trung pha chút cổ điển, Quyến rũ,thành đạt KHUYÊN DÙNG : Ngày- đêm , các mùa tròng năm ,thích hợp sử dụng các sự kiện Quan Trọng -MIÊU TẢ : LUXUR EMPRESS phiên bản nữ của EURO VIET PERFUMEY cho các quý cô .",
+        "ng vòng một cánh tayPhong cách: Nữ tính , Tươi.... Nhóm nước hoa: Hương hoa cỏ trái cây Giới tính: Nữ Năm ra mắt: 2011 Nồng độ: EDP Độ lưu hương: Tạm ổn – 3 giờ đến 6 giờ Độ toả hương: Gần – Toả hương trong vòng một cánh tay Phong cách: Nữ tính , Tươi tắn , Gợi cảm Hương Đầu: Hồng tiêu, Quả lý chua"
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.2117647058823529,
+        "faithfulness": 1.0,
+        "relevance": 1.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Có cuốn sách kỹ năng giao tiếp nào trên Tiki?",
+      "ground_truth_answers": [
+        "Sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim"
+      ],
+      "retrieved_products": [
+        "Sách Trên Đường Băng (Tony Buổi Sáng)",
+        "Sách Sông Đông Êm Đềm (Trọn Bộ 2 Tập)",
+        "Sách Luyện Nói Tiếng Trung Quốc Cấp Tốc Cho Người Bắt Đầu - Tập 2 (Kèm file MP3) (Tái Bản)",
+        "Sách Luyện Nói Tiếng Trung Quốc Cấp Tốc Cho Người Bắt Đầu - Tập 1 (Kèm file MP3) (Tái Bản)",
+        "Sách The One Thing - Điều Ý Nghĩa Nhất (Tái Bản 2022)"
+      ],
+      "retrieval_metrics": {
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": false,
+        "mrr": 0.0,
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0
+      },
+      "generated_answer": "Toi khong tim thay san pham phu hop trong du lieu hien tai.",
+      "context_used": "ăng cho các bạn trẻ khi chuẩn bị bước vào đời..... TRÊN ĐƯỜNG BĂNG là cuốn sách tập hợp những bài viết truyền cảm hứng và hướng dẫn kỹ năng cho các bạn trẻ khi chuẩn bị bước vào đời. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\nn dung nhân loại trong thời lịch sử hỗn loạn nhất. Nếu bạn muốn hiểu một con người đứng giữa dòng chảy định mệnh, tình yêu và nỗi đau, lòng trung thành và sự phản bội, thì đây là cuốn sách dành cho bạn. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\nng bị cho mình kỹ năng giao tiếp bằng tiếng Trung. Lưu ý: Quét mã QR hoặc truy cập vào trang web phía sau sách để tải file MP3 Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\nng bị cho mình kỹ năng giao tiếp bằng tiếng Trung. Lưu ý: Quét mã QR hoặc truy cập vào trang web phía sau sách để tải file MP3 Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\n và làm chủ những điều thực sự quan trọng với bạn. Cuốn sách này đem lại những kết quả kinh ngạc trong mọi lĩnh vực của đời sống, công việc, cá nhân, gia đình, và tinh thần của mỗi người. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+      "retrieved_contexts": [
+        "ăng cho các bạn trẻ khi chuẩn bị bước vào đời..... TRÊN ĐƯỜNG BĂNG là cuốn sách tập hợp những bài viết truyền cảm hứng và hướng dẫn kỹ năng cho các bạn trẻ khi chuẩn bị bước vào đời. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        "n dung nhân loại trong thời lịch sử hỗn loạn nhất. Nếu bạn muốn hiểu một con người đứng giữa dòng chảy định mệnh, tình yêu và nỗi đau, lòng trung thành và sự phản bội, thì đây là cuốn sách dành cho bạn. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        "ng bị cho mình kỹ năng giao tiếp bằng tiếng Trung. Lưu ý: Quét mã QR hoặc truy cập vào trang web phía sau sách để tải file MP3 Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        "ng bị cho mình kỹ năng giao tiếp bằng tiếng Trung. Lưu ý: Quét mã QR hoặc truy cập vào trang web phía sau sách để tải file MP3 Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        " và làm chủ những điều thực sự quan trọng với bạn. Cuốn sách này đem lại những kết quả kinh ngạc trong mọi lĩnh vực của đời sống, công việc, cá nhân, gia đình, và tinh thần của mỗi người. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.2765957446808511,
+        "faithfulness": 5.0,
+        "relevance": 2.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Tiki có những sản phẩm sữa bột nào cho người lớn?",
+      "ground_truth_answers": [
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate",
+        "Sữa Bột Anlene Hương Vanilla"
+      ],
+      "retrieved_products": [
+        "Sữa bột Nestlé NAN OPTIPRO PLUS 2 800g/lon với 5HMO Sản Xuất Tại Thụy Sĩ (6 - 12 tháng)",
+        "Sữa bột Nestlé NAN OPTIPRO PLUS 1 400G/lon với 5HMO Sản Xuất tại Thụy Sĩ (0 - 6 tháng)",
+        "Sữa bột Nestlé NAN OPTIPRO PLUS 1 800g/lon với 5HMO Sản Xuất Tại Thụy Sĩ (0 - 6 tháng)",
+        "Thùng 48 Hộp Sữa Bột Pha Sẵn Friso Gold Rtd Vani (48 Hộp X 110ml)",
+        "Sữa bột NAN INFINIPRO A2 3 với công thức đầu tiên chứa đạm A2, 6HMO & Lợi khuẩn kép nhập khẩu Thụy Sĩ - Hộp 800g (2 - 6 tuổi)"
+      ],
+      "retrieval_metrics": {
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": false,
+        "mrr": 0.0,
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0
+      },
+      "generated_answer": "Xin lỗi, đã có lỗi khi tạo câu trả lời: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+      "context_used": "nh phần: SỮA tách kem (MILK skimmed), LACTOSE (từ SỮA-from MILK), ĐẠM chất lượng OPTIPRO(ĐẠM WHEY, ĐẠM CASEIN từ SỮA-WHEY, CASEIN PROTEIN from MILK), Dầu hướng dương giàu axit oleic, Dầu hạt cải có hàm lượng axit erucic thấp, Tricalci citrat, Chất nhũ hóa Lecithin ĐẬU NÀNH (SOYA lecithin),\n\n phần: LACTOSE (từ SỮA-from MILK), ĐẠM chất lượng OPTIPRO(ĐẠM WHEY, ĐẠM CASEIN từ SỮA-WHEY, CASEIN PROTEIN from MILK), Dầu hướng dương giàu axit oleic, SỮA tách kem (MILK skimmed), Dầu hạt cải có hàm lượng axit erucic thấp, 2'-Fucosyllactose (2’-FL)*, Tricalci citrat, Kali citrat, Chất nhũ hóa\n\n phần: LACTOSE (từ SỮA-from MILK), ĐẠM chất lượng OPTIPRO(ĐẠM WHEY, ĐẠM CASEIN từ SỮA-WHEY, CASEIN PROTEIN from MILK), Dầu hướng dương giàu axit oleic, SỮA tách kem (MILK skimmed), Dầu hạt cải có hàm lượng axit erucic thấp, 2'-Fucosyllactose (2’-FL)*, Tricalci citrat, Kali citrat, Chất nhũ hóa\n\n, kali iodua, natri selenat), cholin, acid citric. Hướng dẫn sử dụng Nên dùng 3 hộp sữa bột pha sẵn mỗi ngày để bổ sung đầy đủ chất cho cơ thể phát triển Bảo quản nơi khô ráo, tránh ánh sáng trực tiếp. Lắc đều trước khi sử dụng.\n\n SỮA A2 tách kem 29% (A2 Skimmed MILK powder),.... Tên sản phẩm: Sản phẩm dinh dưỡng công thức Nestlé NAN INFINIPRO A2 3 800g Xuất xứ: Thụy Sĩ Khối lượng tịnh: 800g/lon Độ tuổi phù hợp: 2 - 6 tuổi Thành phần: SỮA A2 tách kem 29% (A2 Skimmed MILK powder), LACTOSE (từ SỮA-from MILK), WHEY khử khoáng",
+      "retrieved_contexts": [
+        "nh phần: SỮA tách kem (MILK skimmed), LACTOSE (từ SỮA-from MILK), ĐẠM chất lượng OPTIPRO(ĐẠM WHEY, ĐẠM CASEIN từ SỮA-WHEY, CASEIN PROTEIN from MILK), Dầu hướng dương giàu axit oleic, Dầu hạt cải có hàm lượng axit erucic thấp, Tricalci citrat, Chất nhũ hóa Lecithin ĐẬU NÀNH (SOYA lecithin),",
+        " phần: LACTOSE (từ SỮA-from MILK), ĐẠM chất lượng OPTIPRO(ĐẠM WHEY, ĐẠM CASEIN từ SỮA-WHEY, CASEIN PROTEIN from MILK), Dầu hướng dương giàu axit oleic, SỮA tách kem (MILK skimmed), Dầu hạt cải có hàm lượng axit erucic thấp, 2'-Fucosyllactose (2’-FL)*, Tricalci citrat, Kali citrat, Chất nhũ hóa",
+        " phần: LACTOSE (từ SỮA-from MILK), ĐẠM chất lượng OPTIPRO(ĐẠM WHEY, ĐẠM CASEIN từ SỮA-WHEY, CASEIN PROTEIN from MILK), Dầu hướng dương giàu axit oleic, SỮA tách kem (MILK skimmed), Dầu hạt cải có hàm lượng axit erucic thấp, 2'-Fucosyllactose (2’-FL)*, Tricalci citrat, Kali citrat, Chất nhũ hóa",
+        ", kali iodua, natri selenat), cholin, acid citric. Hướng dẫn sử dụng Nên dùng 3 hộp sữa bột pha sẵn mỗi ngày để bổ sung đầy đủ chất cho cơ thể phát triển Bảo quản nơi khô ráo, tránh ánh sáng trực tiếp. Lắc đều trước khi sử dụng.",
+        " SỮA A2 tách kem 29% (A2 Skimmed MILK powder),.... Tên sản phẩm: Sản phẩm dinh dưỡng công thức Nestlé NAN INFINIPRO A2 3 800g Xuất xứ: Thụy Sĩ Khối lượng tịnh: 800g/lon Độ tuổi phù hợp: 2 - 6 tuổi Thành phần: SỮA A2 tách kem 29% (A2 Skimmed MILK powder), LACTOSE (từ SỮA-from MILK), WHEY khử khoáng"
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.24,
+        "faithfulness": 1.0,
+        "relevance": 1.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Có sản phẩm tã bỉm dành cho người lớn không?",
+      "ground_truth_answers": [
+        "Tã Dán Người Lớn SunMate AX2"
+      ],
+      "retrieved_products": [
+        "Tã dán người lớn Caryn XL10 (10 Miếng)",
+        "Bộ sản phẩm giảm mụn sau 12H & phục hồi da sau mụn La Roche-Posay",
+        "[Hộp 30v] Viên Uống Bổ Mắt WIT Ecogreen Giảm Mỏi Mắt, Tăng Cường Thị Lực Mắt Cho Bé Và Người Lớn",
+        "Gia vị rắc cơm 6 vị 30 gói, nội địa Nhật Bản",
+        "Combo 2 Kem đánh răng P/S Trắng răng than hoạt tính & tre 230g"
+      ],
+      "retrieval_metrics": {
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": false,
+        "mrr": 0.0,
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0
+      },
+      "generated_answer": "Xin lỗi, đã có lỗi khi tạo câu trả lời: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+      "context_used": " trên da Hướng dẫn bảo quản Bảo quản nơi khô mát, tránh bụi và ánh nắng trực tiếp. Để sản phẩm xa tầm tay trẻ em THÔNG TIN THƯƠNG HIỆU: Đi đầu trong ngành hàng chăm sóc người lớn tuổi, Unicharm ra mắt sản phẩm tã giấy dành riêng cho người lớn Caryn với nhiều ưu điểm nổi bật.\n\ních ứng da nhẹ ở người lớn, trẻ em và trẻ sơ sinh. THÔNG TIN CHI TIẾT Loại sản phẩm - Kem dưỡng làm dịu đa với thành phần lành tính Độ an toàn - Khả năng dung nạp tối ưu - Quy tắc sản xuất nghiêm ngặt để tối thiểu nguy cơ gây dị ứng da - Không paraben, không hương liệu, không chứa mỡ cừu, không để\n\n, Vol.46, No.3) LƯU Ý - Thực phẩm bảo vệ sức khỏe. Sản phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh. - Không dùng cho người dị ứng với bất cứ thành phần nào của sản phẩm. - Để xa tầm tay trẻ em.\n\nhể thay đổi vị liên tục giúp bé ăn ngon miệng hơn. - Sản phẩm an toàn với sức khỏe của trẻ nhỏ, không chứa chất bảo, chất phụ gia độc hại, thích hợp cho bé từ 1 tuổi trở lên.\n\ni răng. - Sản phẩm dành cho trẻ từ 2 tuổi trở lên. SẢN PHẨM CÙNG THƯƠNG HIỆU Được khuyến cáo sử dụng cùng các dòng sản phẩm khác cùng thương hiệu P/S bao gồm bàn chải và nước súc miệng P/S để mang lại hiệu quả tốt nhất.",
+      "retrieved_contexts": [
+        " trên da Hướng dẫn bảo quản Bảo quản nơi khô mát, tránh bụi và ánh nắng trực tiếp. Để sản phẩm xa tầm tay trẻ em THÔNG TIN THƯƠNG HIỆU: Đi đầu trong ngành hàng chăm sóc người lớn tuổi, Unicharm ra mắt sản phẩm tã giấy dành riêng cho người lớn Caryn với nhiều ưu điểm nổi bật.",
+        "ích ứng da nhẹ ở người lớn, trẻ em và trẻ sơ sinh. THÔNG TIN CHI TIẾT Loại sản phẩm - Kem dưỡng làm dịu đa với thành phần lành tính Độ an toàn - Khả năng dung nạp tối ưu - Quy tắc sản xuất nghiêm ngặt để tối thiểu nguy cơ gây dị ứng da - Không paraben, không hương liệu, không chứa mỡ cừu, không để",
+        ", Vol.46, No.3) LƯU Ý - Thực phẩm bảo vệ sức khỏe. Sản phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh. - Không dùng cho người dị ứng với bất cứ thành phần nào của sản phẩm. - Để xa tầm tay trẻ em.",
+        "hể thay đổi vị liên tục giúp bé ăn ngon miệng hơn. - Sản phẩm an toàn với sức khỏe của trẻ nhỏ, không chứa chất bảo, chất phụ gia độc hại, thích hợp cho bé từ 1 tuổi trở lên.",
+        "i răng. - Sản phẩm dành cho trẻ từ 2 tuổi trở lên. SẢN PHẨM CÙNG THƯƠNG HIỆU Được khuyến cáo sử dụng cùng các dòng sản phẩm khác cùng thương hiệu P/S bao gồm bàn chải và nước súc miệng P/S để mang lại hiệu quả tốt nhất."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.16249999999999998,
+        "faithfulness": 4.0,
+        "relevance": 1.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Tiki có bán nước hoa nữ không?",
+      "ground_truth_answers": [
+        "Nước Hoa Nữ Jimmy Choo I Want Choo EDP"
+      ],
+      "retrieved_products": [
+        "Nước Hoa Nữ Anna Sui Sky 75ml",
+        "Nước Hoa Nữ Gucci Bloom Ambrosia Di Fiori",
+        "Nước Hoa Nữ Gucci Bamboo For Women EDP",
+        "Nước Hoa Nữ LATINO N08 (100ml)",
+        "Nước hoa Lancome La vie Est Belle 10ml"
+      ],
+      "retrieval_metrics": {
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": false,
+        "mrr": 0.0,
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0
+      },
+      "generated_answer": "Câu trả lời:\n\nTiki có bán nước hoa nữ không?\n\nCó, Tiki bán nước hoa nữ. Một số sản phẩm nước hoa nữ được bán trên Tiki bao gồm:\n\n- Anna Sui Sky\n- Gucci (không rõ tên cụ thể)\n- LATINO (không rõ tên cụ thể)\n\nGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+      "context_used": "ơng Hoa và Trái Cây nữ tính, đầy tự tin lúc trước. Anna Sui Sky chắc chắn sẽ phù hợp cho các cô gái diện lên vào những buổi dã ngoại cùng bạn bè, hoặc một buổi hẹn hò lãng mạn cùng nửa kia của mình những ngày đầu xuân và chiều hè mát mẻ. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\n mới giúp lan toả hương thơm sang trọng – nữ tính. Đó chính là hoa diên vỹ và hoa hồng Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\ná là khá ngọt ngào và dễ chịu khi sử dụng lâu dài. Cuối cùng là base notes với sự góp mặt của xạ hương, gỗ đàn hương và vani Tây Ấn giúp mang đến cái kết không thể ngọt ngào và ấm áp hơn cho chai nước hoa của thương hiệu Gucci này. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\nrà, táo, hồng, hoa mộc lan, đàn hương, tuyết tùng. Hương liệu được nhập khẩu từ các nhà sản xuất hương hàng đầu thế giới: Pháp, Anh, Sản phẩm thuộc dòng sản phẩm LATINO được sản xuất và phân phối của công ty cổ phần Song Hoa. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\nang đến cho quý cô sự mềm mại và xinh đẹp dài lâu. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+      "retrieved_contexts": [
+        "ơng Hoa và Trái Cây nữ tính, đầy tự tin lúc trước. Anna Sui Sky chắc chắn sẽ phù hợp cho các cô gái diện lên vào những buổi dã ngoại cùng bạn bè, hoặc một buổi hẹn hò lãng mạn cùng nửa kia của mình những ngày đầu xuân và chiều hè mát mẻ. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        " mới giúp lan toả hương thơm sang trọng – nữ tính. Đó chính là hoa diên vỹ và hoa hồng Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        "á là khá ngọt ngào và dễ chịu khi sử dụng lâu dài. Cuối cùng là base notes với sự góp mặt của xạ hương, gỗ đàn hương và vani Tây Ấn giúp mang đến cái kết không thể ngọt ngào và ấm áp hơn cho chai nước hoa của thương hiệu Gucci này. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        "rà, táo, hồng, hoa mộc lan, đàn hương, tuyết tùng. Hương liệu được nhập khẩu từ các nhà sản xuất hương hàng đầu thế giới: Pháp, Anh, Sản phẩm thuộc dòng sản phẩm LATINO được sản xuất và phân phối của công ty cổ phần Song Hoa. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        "ang đến cho quý cô sự mềm mại và xinh đẹp dài lâu. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.16722408026755853,
+        "faithfulness": 4.0,
+        "relevance": 4.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Sữa Anlene Gold và sữa Anlene vanilla khác nhau chỗ nào?",
+      "ground_truth_answers": [
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate",
+        "Sữa Bột Anlene Hương Vanilla"
+      ],
+      "retrieved_products": [
+        "[Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon",
+        "Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g)",
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate (Hộp Giấy 440g)",
+        "Bộ đôi Kem chống nắng dạng sữa dưỡng da kiềm dầu bảo vệ hoàn hảo (Anessa Gold Milk 60ml x2)",
+        "Combo 3 TPBS Anlene Gold hương vani 1.2kg - Tặng máy vắt cam"
+      ],
+      "retrieval_metrics": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "mrr": 1.0,
+        "precision@1": 1.0,
+        "precision@3": 1.0,
+        "precision@5": 0.8
+      },
+      "generated_answer": "Sữa Anlene Gold và sữa Anlene vanilla khác nhau ở hương vị và thành phần. Sữa Anlene Gold có hương vị sô-cô-la, cà-phê, và vị vani, trong khi sữa Anlene vanilla chỉ có hương vị vani.",
+      "context_used": "[Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. [Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. * Bao bì có thể thay đổi tùy đợt hàngSữa Bột Anlene Gold 5X Hương Vanilla (Hộp Thiếc 800g)Giới thiệuAnlene Gold 5X/Anlene 5 khoẻ vàng mới là sản phẩm sữa chứa phức hợp dinh dưỡng với hoạt chất MFG....\n\nSữa Bột Anlene Hương Vanilla (Hộp Giấy 440g). Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g). Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g)Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g) gồm các dưỡng chất thiết yếu như canxi, vitamin D, đạm, magiê và FOS inulin giúp xư....\n\nAnlene Gold Vị Sô-cô-la Sữa Anlene Gold Vị Cà-phê Thành phần Thành phần chính của sản phẩm gồm: Sữa bò (58%) (sữa gầy, sữa nguyên kem), maltodextrin. bộ cacao đã tách béo, đường sucrose, khoáng chất, hương socola tổng hợp, Lecithin đậu nành,...\n\nBộ đôi Kem chống nắng dạng sữa dưỡng da kiềm dầu bảo vệ hoàn hảo (Anessa Gold Milk 60ml x2). Bộ đôi Kem chống nắng dạng sữa dưỡng da kiềm dầu bảo vệ hoàn hảo (Anessa Gold Milk 60ml x2). Bộ đôi 2 Kem chống nắng dạng sữa dưỡng da bảo vệ hoàn hảo Anessa Perfect UV Sunscreen Skincare Milk SPF 50+ PA++++ 60ml giúp bảo vệ da tối đa với kết cấu mỏng nhẹ, khô ráo và kiểm soát dầu hiệu quả. ....\n\nCombo 3 TPBS Anlene Gold hương vani 1.2kg - Tặng máy vắt cam. Combo 3 TPBS Anlene Gold hương vani 1.2kg - Tặng máy vắt cam. SỮA ANLENE GOLDAnlene Gold là sản phẩm sữa chứa hệ dưỡng chất MovePro cung cấp dinh dưỡng tăng cường với hoạt chất MFGM được KIỂM NGHIỆM LÂM SÀNG giúp cơ thể thêm linh hoạt và Vitamin B tiếp thêm năng....",
+      "retrieved_contexts": [
+        "[Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. [Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. * Bao bì có thể thay đổi tùy đợt hàngSữa Bột Anlene Gold 5X Hương Vanilla (Hộp Thiếc 800g)Giới thiệuAnlene Gold 5X/Anlene 5 khoẻ vàng mới là sản phẩm sữa chứa phức hợp dinh dưỡng với hoạt chất MFG....",
+        "Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g). Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g). Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g)Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g) gồm các dưỡng chất thiết yếu như canxi, vitamin D, đạm, magiê và FOS inulin giúp xư....",
+        "Anlene Gold Vị Sô-cô-la Sữa Anlene Gold Vị Cà-phê Thành phần Thành phần chính của sản phẩm gồm: Sữa bò (58%) (sữa gầy, sữa nguyên kem), maltodextrin. bộ cacao đã tách béo, đường sucrose, khoáng chất, hương socola tổng hợp, Lecithin đậu nành,...",
+        "Bộ đôi Kem chống nắng dạng sữa dưỡng da kiềm dầu bảo vệ hoàn hảo (Anessa Gold Milk 60ml x2). Bộ đôi Kem chống nắng dạng sữa dưỡng da kiềm dầu bảo vệ hoàn hảo (Anessa Gold Milk 60ml x2). Bộ đôi 2 Kem chống nắng dạng sữa dưỡng da bảo vệ hoàn hảo Anessa Perfect UV Sunscreen Skincare Milk SPF 50+ PA++++ 60ml giúp bảo vệ da tối đa với kết cấu mỏng nhẹ, khô ráo và kiểm soát dầu hiệu quả. ....",
+        "Combo 3 TPBS Anlene Gold hương vani 1.2kg - Tặng máy vắt cam. Combo 3 TPBS Anlene Gold hương vani 1.2kg - Tặng máy vắt cam. SỮA ANLENE GOLDAnlene Gold là sản phẩm sữa chứa hệ dưỡng chất MovePro cung cấp dinh dưỡng tăng cường với hoạt chất MFGM được KIỂM NGHIỆM LÂM SÀNG giúp cơ thể thêm linh hoạt và Vitamin B tiếp thêm năng...."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.27555555555555555,
+        "faithfulness": 5.0,
+        "relevance": 4.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "So sánh sữa Anlene hương vanilla và hương chocolate giá bao nhiêu?",
+      "ground_truth_answers": [
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate",
+        "Sữa Bột Anlene Hương Vanilla"
+      ],
+      "retrieved_products": [
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate (Hộp Giấy 440g)",
+        "Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g)",
+        "Thùng 48 Bịch Sữa Tiệt Trùng Dutch Lady Cô Gái Hà Lan Có Đường 180ml",
+        "[Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon",
+        "Thùng 48 chai sữa chua uống hương nho Fristi 80ml"
+      ],
+      "retrieval_metrics": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "mrr": 1.0,
+        "precision@1": 1.0,
+        "precision@3": 0.6666666666666666,
+        "precision@5": 0.6
+      },
+      "generated_answer": "Toi khong tim thay san pham phu hop trong du lieu hien tai.",
+      "context_used": "chất, hương socola tổng hợp, Lecithin đậu nành,... Ngoài ra, sản phẩm cung cấp cho cơ thể khoảng 158 kcal trên 40g bột sữa (pha trong 200ml sữa). Đặc điểm nổi bật Anlene Gold 3X/Anlene 3 Khoẻ mới là sản phẩm sữa chứa nhiều dưỡng chất thiết yếu hỗ trợ hệ Cơ-Xương-Khớp khỏe mạnh.\n\nSữa Bột Anlene Hương Vanilla (Hộp Giấy 440g). Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g). Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g)Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g) gồm các dưỡng chất thiết yếu như canxi, vitamin D, đạm, magiê và FOS inulin giúp xư....\n\nTheo lượng đường: Có đường, ít đường, không đường. Theo hương vị: Vị tự nhiên, hương dâu, hương sô cô la. Sữa Dutch Lady bịch 180ml giá bao nhiêu một bịch? Giá một bịch sữa tiệt trùng Dutch Lady (Cô Gái Hà Lan) dung tích 180ml thường dao động từ 6.500đ đến 8.500đ.\n\n[Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. [Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. * Bao bì có thể thay đổi tùy đợt hàngSữa Bột Anlene Gold 5X Hương Vanilla (Hộp Thiếc 800g)Giới thiệuAnlene Gold 5X/Anlene 5 khoẻ vàng mới là sản phẩm sữa chứa phức hợp dinh dưỡng với hoạt chất MFG....\n\n từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thành phần: Nước, sữa tươi, bột whey, hương nho tổng hợp,.... Thương hiệu: Fristi. Xuất xứ thương hiệu: Hà Lan. Hạn sử dụng: 08 tháng kể từ ngày sản xuất.",
+      "retrieved_contexts": [
+        "chất, hương socola tổng hợp, Lecithin đậu nành,... Ngoài ra, sản phẩm cung cấp cho cơ thể khoảng 158 kcal trên 40g bột sữa (pha trong 200ml sữa). Đặc điểm nổi bật Anlene Gold 3X/Anlene 3 Khoẻ mới là sản phẩm sữa chứa nhiều dưỡng chất thiết yếu hỗ trợ hệ Cơ-Xương-Khớp khỏe mạnh.",
+        "Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g). Sữa Bột Anlene Hương Vanilla (Hộp Giấy 440g). Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g)Sữa Bột Anlene Gold Movepro Hương Vanilla (Hộp Giấy 440g) gồm các dưỡng chất thiết yếu như canxi, vitamin D, đạm, magiê và FOS inulin giúp xư....",
+        "Theo lượng đường: Có đường, ít đường, không đường. Theo hương vị: Vị tự nhiên, hương dâu, hương sô cô la. Sữa Dutch Lady bịch 180ml giá bao nhiêu một bịch? Giá một bịch sữa tiệt trùng Dutch Lady (Cô Gái Hà Lan) dung tích 180ml thường dao động từ 6.500đ đến 8.500đ.",
+        "[Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. [Tặng 1 lon Anlene Gold 400g] Bộ quà tặng combo 2 sữa bột Anlene Gold 800g/lon. * Bao bì có thể thay đổi tùy đợt hàngSữa Bột Anlene Gold 5X Hương Vanilla (Hộp Thiếc 800g)Giới thiệuAnlene Gold 5X/Anlene 5 khoẻ vàng mới là sản phẩm sữa chứa phức hợp dinh dưỡng với hoạt chất MFG....",
+        " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Thành phần: Nước, sữa tươi, bột whey, hương nho tổng hợp,.... Thương hiệu: Fristi. Xuất xứ thương hiệu: Hà Lan. Hạn sử dụng: 08 tháng kể từ ngày sản xuất."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.29411764705882354,
+        "faithfulness": 4.0,
+        "relevance": 1.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Cuốn sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim có mấy trang?",
+      "ground_truth_answers": [
+        "Sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim"
+      ],
+      "retrieved_products": [
+        "Sách Đàn Ông Sao Hỏa Đàn Bà Sao Kim",
+        "Sách Tây du ký (bìa cứng) (trọn bộ 2 tập)",
+        "Sách Circe",
+        "Sách Dế Mèn Phiêu Lưu Ký",
+        "Sách Học Cách Học (Tái bản)"
+      ],
+      "retrieval_metrics": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "mrr": 1.0,
+        "precision@1": 1.0,
+        "precision@3": 0.3333333333333333,
+        "precision@5": 0.2
+      },
+      "generated_answer": "Toi khong tim thay san pham phu hop trong du lieu hien tai.",
+      "context_used": " Sinh - Mèo Đã Dạy Chúng Ta Điều Gì Về Cuộc Sống . Vượt Qua Chuyện Sao Hỏa - Sao Kim Xem thêm các tác phẩm khác tại đây Cuốn Sách Này Dành Cho Ai? Các cặp đôi đang muốn cải thiện giao tiếp và tránh hiểu lầm. Người đang tìm hiểu bản thân và đối phương ở một mức độ sâu sắc hơn.\n\nng thiện. Đây thực sự là một cuốn sách tuyệt vời”. Toàn bộ cuốn sách gồ 100 hồ, có thể chia ra làm ba phần chính, chủ yếu miêu tả những câu chuyện về việc Tôn Ngộ Không ra đời và đại náo thiên cung, Đường Tăng xuất thế và nguyên do đi lấy chân kinh, và sau đó là việc bốn thầy trò trải qua chín chín\n\nến hành chuyển thể thành phim truyền hình dài tập. Sách cùng tác giả: - Trường ca Achilles Circe – Tặng kèm 01 Postcard và 01 Phụ lục danh sách các nhân vật (thần linh, phàm nhân, quái vật) --- Một ấn phẩm của WINGS BOOKS - Thương hiệu sách trẻ của NXB Kim Đồng.\n\nẩm đã được xuất bản với nhiều hình thức khác nhau. Trong đó cuốn \"Dế Mèn phiêu lưu kí\" gồm 148 trang, trên khổ giấy 18x25 cm với nhiều minh hoạ sinh động của hoạ sĩ Tạ Huy Long - một hoạ sĩ chuyên vẽ cho sách thiếu nhi.\n\n từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Phiên bản sách: Phiên bản thường. Công ty phát hành: Alphabooks. Ngày xuất bản: 2022-07-07 00:00:00. Kích thước: 16x24cm. Dịch Giả: Liên Hương. Loại bìa: Bìa mềm. Số trang: 280. Nhà xuất bản: Nhà Xuất Bản Thế Giới.",
+      "retrieved_contexts": [
+        " Sinh - Mèo Đã Dạy Chúng Ta Điều Gì Về Cuộc Sống . Vượt Qua Chuyện Sao Hỏa - Sao Kim Xem thêm các tác phẩm khác tại đây Cuốn Sách Này Dành Cho Ai? Các cặp đôi đang muốn cải thiện giao tiếp và tránh hiểu lầm. Người đang tìm hiểu bản thân và đối phương ở một mức độ sâu sắc hơn.",
+        "ng thiện. Đây thực sự là một cuốn sách tuyệt vời”. Toàn bộ cuốn sách gồ 100 hồ, có thể chia ra làm ba phần chính, chủ yếu miêu tả những câu chuyện về việc Tôn Ngộ Không ra đời và đại náo thiên cung, Đường Tăng xuất thế và nguyên do đi lấy chân kinh, và sau đó là việc bốn thầy trò trải qua chín chín",
+        "ến hành chuyển thể thành phim truyền hình dài tập. Sách cùng tác giả: - Trường ca Achilles Circe – Tặng kèm 01 Postcard và 01 Phụ lục danh sách các nhân vật (thần linh, phàm nhân, quái vật) --- Một ấn phẩm của WINGS BOOKS - Thương hiệu sách trẻ của NXB Kim Đồng.",
+        "ẩm đã được xuất bản với nhiều hình thức khác nhau. Trong đó cuốn \"Dế Mèn phiêu lưu kí\" gồm 148 trang, trên khổ giấy 18x25 cm với nhiều minh hoạ sinh động của hoạ sĩ Tạ Huy Long - một hoạ sĩ chuyên vẽ cho sách thiếu nhi.",
+        " từ nước ngoài có giá trị trên 1 triệu đồng)...... Thông số kỹ thuật: Phiên bản sách: Phiên bản thường. Công ty phát hành: Alphabooks. Ngày xuất bản: 2022-07-07 00:00:00. Kích thước: 16x24cm. Dịch Giả: Liên Hương. Loại bìa: Bìa mềm. Số trang: 280. Nhà xuất bản: Nhà Xuất Bản Thế Giới."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.2765957446808511,
+        "faithfulness": 2.0,
+        "relevance": 1.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Sữa Anlene chocolate bao nhiêu kcal?",
+      "ground_truth_answers": [
+        "Sữa Bột Anlene Gold Movepro Hương Chocolate"
+      ],
+      "retrieved_products": [
+        "Máy Làm Sữa Hạt Đa Năng SEKA E300 (SK-602) 12 Chức Năng Ưu Việt - Hàng Chính Hãng",
+        "Thùng sữa đậu nành Vinasoy Fami Canxi Vị sô cô la hộp (200ml x 36 hộp)",
+        "Sữa rửa mặt Ốc Sên dưỡng ẩm trắng da, ngăn ngừa lão hóa Prettyskin Total Solution 24K Gold Snail Cleansing Foam 150ml tặng móc khóa",
+        "Bột trà xanh Matcha nguyên chất Nhật Bản",
+        "NƯỚC HOA KAT&KEV GOODGIRL 50ML_SANG TRỌNG, THANH LỊCH CHO PHÁI ĐẸP (lưu hương liên tục 24h)"
+      ],
+      "retrieval_metrics": {
+        "hit@1": false,
+        "hit@3": false,
+        "hit@5": false,
+        "mrr": 0.0,
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0
+      },
+      "generated_answer": "Toi khong tim thay san pham phu hop trong du lieu hien tai.",
+      "context_used": "ng suất: 600W - Dung tích: 600ml - Trọng lượng: 1.3kg - Kích thước: 166x131x259mm - Bảo hành: 12 tháng Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\na mãn nhu cầu uống thích sữa đậu nành vị sô cô la. Sữa đậu nành với tiêu chuẩn 3 không: Không chất bảo quản; Không biến đổi Gen; Không Cholesterol. Thương hiệu sữa đậu nành số 1 Việt Nam được chọn mua. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\nh các chất thải ứ đọng. - Phù hợp với mọi loại da. HƯỚNG DẪN SỬ DỤNG - Làm ướt mặt, lấy một lượng kem vừa đủ vào lòng bàn tay. - Tạo bọt và thoa đều khắp mặt. - Rửa sạch với nước. - Dùng hàng ngày, sáng và tối. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.\n\nử dụng làm bánh, kem hay các loại đồ uống rất tốt cho sức khoẻ. Hướng dẫn sử dụng: - Cách làm, pha chế matcha trà xanh (matcha green tea) Một ly đá 40ml nước sôi 3 thì 1/2 teaspoon bột trà xan (3gr), bạn đổ quá nhiều thì sẽ đắng, hơn nữa làm tăng chi phi của bạn, vì bột trà xanh khá là đắt.\n\n, Hoa huệ trắng Tầng hương cuối: Kakao, Đậu Tonka. Đặc tính, lưu hương 8-10h, bán kính mùi 2m Dung tích: 50ml SP phân phối chính hãng, mùi thơm sang trọng, bền lâu, không hắc nồng Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+      "retrieved_contexts": [
+        "ng suất: 600W - Dung tích: 600ml - Trọng lượng: 1.3kg - Kích thước: 166x131x259mm - Bảo hành: 12 tháng Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        "a mãn nhu cầu uống thích sữa đậu nành vị sô cô la. Sữa đậu nành với tiêu chuẩn 3 không: Không chất bảo quản; Không biến đổi Gen; Không Cholesterol. Thương hiệu sữa đậu nành số 1 Việt Nam được chọn mua. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        "h các chất thải ứ đọng. - Phù hợp với mọi loại da. HƯỚNG DẪN SỬ DỤNG - Làm ướt mặt, lấy một lượng kem vừa đủ vào lòng bàn tay. - Tạo bọt và thoa đều khắp mặt. - Rửa sạch với nước. - Dùng hàng ngày, sáng và tối. Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành.",
+        "ử dụng làm bánh, kem hay các loại đồ uống rất tốt cho sức khoẻ. Hướng dẫn sử dụng: - Cách làm, pha chế matcha trà xanh (matcha green tea) Một ly đá 40ml nước sôi 3 thì 1/2 teaspoon bột trà xan (3gr), bạn đổ quá nhiều thì sẽ đắng, hơn nữa làm tăng chi phi của bạn, vì bột trà xanh khá là đắt.",
+        ", Hoa huệ trắng Tầng hương cuối: Kakao, Đậu Tonka. Đặc tính, lưu hương 8-10h, bán kính mùi 2m Dung tích: 50ml SP phân phối chính hãng, mùi thơm sang trọng, bền lâu, không hắc nồng Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.29411764705882354,
+        "faithfulness": 4.0,
+        "relevance": 1.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Tã SunMate AX2 size XL dành cho người có vòng bụng bao nhiêu?",
+      "ground_truth_answers": [
+        "Tã Dán Người Lớn SunMate AX2"
+      ],
+      "retrieved_products": [
+        "Tã Dán Người Lớn SunMate AX2 Size XL10 (10 Miếng)",
+        "Combo 2 Gói Tã Quần Người Lớn Sunmate Khô Thoáng L7 (7 Miếng/ Gói)",
+        "Combo 3 Tấm lót SunMate cải tiến mới 20 miếng/gói size M (45 x 70cm)",
+        "Combo 6 Gói Tấm Lót Sunmate 20 Miếng (45*70cm) - Đệm lót người lớn, người già",
+        "Combo 2 Tã Quần Người Lớn Sunmate Mềm Mại L8 (8 Miếng)"
+      ],
+      "retrieval_metrics": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "mrr": 1.0,
+        "precision@1": 1.0,
+        "precision@3": 0.3333333333333333,
+        "precision@5": 0.2
+      },
+      "generated_answer": "Xin lỗi, đã có lỗi khi tạo câu trả lời: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+      "context_used": "Tã Dán Người Lớn SunMate AX2 Size XL10 (10 Miếng). Tã Dán Người Lớn SunMate AX2 Size XL10 (10 Miếng). Mặt đáy dạng vải thoáng khíTã Dán Người Lớn SunMate G2 Size XL10 (10 Miếng) được sản xuất từ vải không dệt mềm mại, giúp lưu thông không khí tối đa. Khả năng thoát hơi nóng ẩm hiệu quả giúp cho người....\n\n có thể đi lại, và cần độ thấm hút cao. Với ng.... [Mẫu mới] Combo 2 Tã quần SunMate siêu mềm mại G1 mới size XL-07 miếng Giới thiệu Combo 2 Gói Tã Quần Người Lớn Sunmate Khô Thoáng L7 phù hợp với người có thể đi lại, và cần độ thấm hút cao.\n\nCombo 3 Tấm lót SunMate cải tiến mới 20 miếng/gói size M (45 x 70cm). Combo 3 Tấm lót SunMate cải tiến mới 20 miếng/gói size M (45 x 70cm). Combo 3 Tấm lót SunMate cải tiến mới (45 x 70cm)Giới thiệuSản phẩm tấm lót SunMate dành cho cả nam và nữ, phù hợp với người hạn chế khả năng đi lại. Hạt gel tác động kép siêu thấm hút và kháng khuẩ....\n\ngiúp luôn khô thoáng, thoải mái cho người sử dụng. Tấm lót SunMate cải tiến mới với hai kích thước: 45cmx70cm và 60cmx70cm, giúp người dùng có nhiều sự lựa phù hợp với nhu cầu sử dụng.\n\n ngày. Với người lớn mất kiểm soát bài tiết ho.... Combo 2 Tã Quần Người Lớn Sunmate Mềm Mại L8 (8 Miếng) Giới thiệu Tã quần SunMate Mềm Mại phù hợp với người có thể đi lại và thích hợp mặc thoải mái mỗi ngày.",
+      "retrieved_contexts": [
+        "Tã Dán Người Lớn SunMate AX2 Size XL10 (10 Miếng). Tã Dán Người Lớn SunMate AX2 Size XL10 (10 Miếng). Mặt đáy dạng vải thoáng khíTã Dán Người Lớn SunMate G2 Size XL10 (10 Miếng) được sản xuất từ vải không dệt mềm mại, giúp lưu thông không khí tối đa. Khả năng thoát hơi nóng ẩm hiệu quả giúp cho người....",
+        " có thể đi lại, và cần độ thấm hút cao. Với ng.... [Mẫu mới] Combo 2 Tã quần SunMate siêu mềm mại G1 mới size XL-07 miếng Giới thiệu Combo 2 Gói Tã Quần Người Lớn Sunmate Khô Thoáng L7 phù hợp với người có thể đi lại, và cần độ thấm hút cao.",
+        "Combo 3 Tấm lót SunMate cải tiến mới 20 miếng/gói size M (45 x 70cm). Combo 3 Tấm lót SunMate cải tiến mới 20 miếng/gói size M (45 x 70cm). Combo 3 Tấm lót SunMate cải tiến mới (45 x 70cm)Giới thiệuSản phẩm tấm lót SunMate dành cho cả nam và nữ, phù hợp với người hạn chế khả năng đi lại. Hạt gel tác động kép siêu thấm hút và kháng khuẩ....",
+        "giúp luôn khô thoáng, thoải mái cho người sử dụng. Tấm lót SunMate cải tiến mới với hai kích thước: 45cmx70cm và 60cmx70cm, giúp người dùng có nhiều sự lựa phù hợp với nhu cầu sử dụng.",
+        " ngày. Với người lớn mất kiểm soát bài tiết ho.... Combo 2 Tã Quần Người Lớn Sunmate Mềm Mại L8 (8 Miếng) Giới thiệu Tã quần SunMate Mềm Mại phù hợp với người có thể đi lại và thích hợp mặc thoải mái mỗi ngày."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.16249999999999998,
+        "faithfulness": 1.0,
+        "relevance": 1.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    },
+    {
+      "question": "Nước hoa Jimmy Choo I Want Choo có xuất xứ ở đâu?",
+      "ground_truth_answers": [
+        "Nước Hoa Nữ Jimmy Choo I Want Choo EDP",
+        "Jimmy Choo I Want Choo"
+      ],
+      "retrieved_products": [
+        "Nước Hoa Nữ Jimmy Choo I Want Choo EDP 100ml",
+        "Nước Hoa Nam Jimmy Choo Man Ice Edt 100Ml",
+        "Nước Hoa Nam Salvatore Ferragamo Uomo Pour Homme - Eau De Toilette (100ml)",
+        "Son Thỏi Màu Cam Sữa Lì Mịn Siêu Dưỡng Yumeisakura Chotto Matte Milky Orange Lipstick YMS18 3.5g",
+        "Nước Hoa Nam Versace Eros - Eau De Toilette (50ml)"
+      ],
+      "retrieval_metrics": {
+        "hit@1": true,
+        "hit@3": true,
+        "hit@5": true,
+        "mrr": 1.0,
+        "precision@1": 1.0,
+        "precision@3": 0.6666666666666666,
+        "precision@5": 0.4
+      },
+      "generated_answer": "Xin lỗi, đã có lỗi khi tạo câu trả lời: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+      "context_used": "cao cấp sóng sánh màu hồng đào dịu dàng bên trong. Logo Jimmy Choo được chạm nối khéo léo và nắp chai vát tròn được mạ vàng tỉ mỉ. I WANT CHOO đẹp một cách xa hoa và quyền lực đúng chất Jimmy Choo.\n\nCây hoắc hương, Gỗ tuyết tùng, Quả táo xanh Hương cuối: Xạ hương, Rêu sồi Moss, Hương Ambroxan Thể hiện đúng như cái tên của nó, Jimmy Choo Man Ice là một trong những dòng nước hoa nam thanh mát đáng được nêu danh trong các anh em nhà Jimmy Choo.\n\nNước Hoa Nam Salvatore Ferragamo Uomo Pour Homme - Eau De Toilette (100ml). Nước Hoa Nam Salvatore Ferragamo Uomo Pour Homme - Eau De Toilette (100ml). Nhóm nước hoa: Hương gỗ phương đôngGiới tính: NamNăm ra mắt: 2016Nồng độ: EDTNhà pha chế: Aurelien GuichardPhong Cách: Nam Tính, Hiện Đại, Thu HútHương Đầu: Tiêu đen, Bạch đậu khấu, Cam Bergamot....\n\nn thật xinh đẹp trước thế giới đang chờ ngoài kia. Yêu nhiều hơn! Vui nhiều hơn! Xinh nhiều hơn! Với một chút son đến từ bộ sưu tập Chotto Matte của nhà Yumeisakura.\n\nNước Hoa Nam Versace Eros - Eau De Toilette (50ml). Nước Hoa Nam Versace Eros - Eau De Toilette (50ml). Nhóm nước hoa: Hương thơm dương xỉGiới tính: NamNăm ra mắt: 2012Nồng độ: EDTNhà pha chế: Aurelien GuichardPhong cách: Mạnh Mẽ , Nổi Bật , Thu hútHương Đầu: Cây bạc hà, Táo xanh, Quả chanh vàngHương gi....",
+      "retrieved_contexts": [
+        "cao cấp sóng sánh màu hồng đào dịu dàng bên trong. Logo Jimmy Choo được chạm nối khéo léo và nắp chai vát tròn được mạ vàng tỉ mỉ. I WANT CHOO đẹp một cách xa hoa và quyền lực đúng chất Jimmy Choo.",
+        "Cây hoắc hương, Gỗ tuyết tùng, Quả táo xanh Hương cuối: Xạ hương, Rêu sồi Moss, Hương Ambroxan Thể hiện đúng như cái tên của nó, Jimmy Choo Man Ice là một trong những dòng nước hoa nam thanh mát đáng được nêu danh trong các anh em nhà Jimmy Choo.",
+        "Nước Hoa Nam Salvatore Ferragamo Uomo Pour Homme - Eau De Toilette (100ml). Nước Hoa Nam Salvatore Ferragamo Uomo Pour Homme - Eau De Toilette (100ml). Nhóm nước hoa: Hương gỗ phương đôngGiới tính: NamNăm ra mắt: 2016Nồng độ: EDTNhà pha chế: Aurelien GuichardPhong Cách: Nam Tính, Hiện Đại, Thu HútHương Đầu: Tiêu đen, Bạch đậu khấu, Cam Bergamot....",
+        "n thật xinh đẹp trước thế giới đang chờ ngoài kia. Yêu nhiều hơn! Vui nhiều hơn! Xinh nhiều hơn! Với một chút son đến từ bộ sưu tập Chotto Matte của nhà Yumeisakura.",
+        "Nước Hoa Nam Versace Eros - Eau De Toilette (50ml). Nước Hoa Nam Versace Eros - Eau De Toilette (50ml). Nhóm nước hoa: Hương thơm dương xỉGiới tính: NamNăm ra mắt: 2012Nồng độ: EDTNhà pha chế: Aurelien GuichardPhong cách: Mạnh Mẽ , Nổi Bật , Thu hútHương Đầu: Cây bạc hà, Táo xanh, Quả chanh vàngHương gi...."
+      ],
+      "generation_metrics": {
+        "rouge_l": 0.2117647058823529,
+        "faithfulness": 1.0,
+        "relevance": 1.0
+      },
+      "ragas_metrics": {
+        "context_precision": null,
+        "faithfulness": null,
+        "answer_relevancy": null
+      },
+      "error": null
+    }
+  ]
+}
