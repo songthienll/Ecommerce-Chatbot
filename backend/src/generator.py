@@ -10,11 +10,10 @@ Usage:
 """
 
 import html
-import os
 import re
 import time
 import unicodedata
-from typing import Literal, Optional
+from typing import Optional
 
 import requests
 from dotenv import load_dotenv

@@ -121,7 +121,7 @@ def migrate():
         print(f"  Migrated {migrated:,}/{total:,} ({pct:.1f}%)")
 
     print(f"\n[migration complete] {migrated:,} chunks -> Qdrant '{QDRANT_COLLECTION}'")
-    print(f"   Qdrant dashboard: http://localhost:6333/dashboard")
+    print("   Qdrant dashboard: http://localhost:6333/dashboard")
 
 
 if __name__ == "__main__":
