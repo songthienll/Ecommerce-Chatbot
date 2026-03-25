@@ -133,6 +133,19 @@ PRICE_WORDS = {
     "dong": 1, "vnd": 1,
 }
 
+BRAND_TERMS = {
+    "sony", "samsung", "apple", "xiaomi", "oppo", "vivo", "huawei", "realme",
+    "nike", "adidas",
+}
+
+ELECTRONICS_TERMS = {
+    "tai", "nghe", "dien", "thoai", "laptop", "may", "tinh", "smartphone",
+}
+
+NOISE_TERMS = {
+    "gau", "bong", "do", "choi", "sach", "wreath", "noel", "qua", "be",
+}
+
 
 def extract_price_range(query: str) -> Optional[Tuple[float, float]]:
     text = query.lower()
@@ -226,6 +239,18 @@ def compute_keyword_score(c: dict, keywords: set, price_range: Optional[Tuple[fl
             score += 30
         elif pmax > 0 and p <= pmax * 2:
             score += 10
+
+    brand_hits = sum(1 for b in BRAND_TERMS if _word_boundary_match(b, name_lower))
+    if brand_hits:
+        score += brand_hits * 18
+
+    electronics_hits = sum(1 for t in ELECTRONICS_TERMS if _word_boundary_match(t, name_lower))
+    if electronics_hits:
+        score += min(electronics_hits, 3) * 6
+
+    noise_hits = sum(1 for t in NOISE_TERMS if _word_boundary_match(t, name_lower))
+    if noise_hits:
+        score -= noise_hits * 12
 
     return score
 
@@ -362,7 +387,13 @@ def retrieve(query: str, top_k: int = 5) -> list:
     fusion_scores = []
     for c in chunks:
         pid = c["product_id"]
-        vec_score = 1.0 - (c["distance"] / max_dist)
+        if VECTOR_DB == "qdrant":
+            # Qdrant score: higher is better.
+            vec_score = c["distance"] / max_dist
+        else:
+            # Chroma distance: lower is better.
+            vec_score = 1.0 - (c["distance"] / max_dist)
+
         kw = kw_scores.get(pid, 0.0) / max_kw if max_kw > 0 else 0.0
         combined = (1.0 - KEYWORD_WEIGHT) * vec_score + KEYWORD_WEIGHT * kw
         fusion_scores.append((combined, c))
