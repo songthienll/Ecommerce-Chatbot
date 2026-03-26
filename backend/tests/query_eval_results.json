@@ -1,25 +1,25 @@
 {
   "summary": {
     "total": 30,
-    "passed": 24,
-    "failed": 6,
-    "pass_rate": 80.0,
-    "duration_sec": 30.25,
+    "passed": 18,
+    "failed": 12,
+    "pass_rate": 60.0,
+    "duration_sec": 29.02,
     "by_type": {
       "happy": {
         "total": 10,
-        "passed": 7,
-        "pass_rate": 70.0
+        "passed": 5,
+        "pass_rate": 50.0
       },
       "hard_negative": {
         "total": 10,
-        "passed": 10,
-        "pass_rate": 100.0
+        "passed": 9,
+        "pass_rate": 90.0
       },
       "mixed": {
         "total": 10,
-        "passed": 7,
-        "pass_rate": 70.0
+        "passed": 4,
+        "pass_rate": 40.0
       }
     }
   },
@@ -31,8 +31,8 @@
       "passed": true,
       "reason": "ok",
       "sources_count": 5,
-      "first_source": "Tai Nghe Bluetooth Sony WH-CH520",
-      "answer_preview": "Tôi có thể gợi ý một số sản phẩm tai nghe Sony dưới 2 triệu đồng như sau:\n\n1. **Tai Nghe Bluetooth Sony WH-CH520**: Giá khoảng 1,5 triệu đồng, pin 50h, sạc nhanh USB-C, âm thanh rõ nét, thoải mái đeo cả ngày. Màu đen, tr"
+      "first_source": "GẤU BÔNG RÁI CÁ ĐEO TAI NGHE – THÚ NHỒI BÔNG NGỘ NGHĨNH CỰC DỄ THƯƠNG",
+      "answer_preview": "Tôi không tìm thấy sản phẩm \"Tai nghe Sony\" dưới 2 triệu trong dữ liệu hiện tại. Tuy nhiên, tôi có thể gợi ý một số sản phẩm tai nghe khác dưới 2 triệu:\n\n1. **Tai nghe Razer Triforce** - Giá: 1.800.000 đồng - Mô tả: Âm t"
     },
     {
       "id": "HP02",
@@ -41,8 +41,8 @@
       "passed": true,
       "reason": "ok",
       "sources_count": 5,
-      "first_source": "Tai Nghe Bluetooth Sony WH-CH520",
-      "answer_preview": "Tôi có một số gợi ý cho bạn về tai nghe Bluetooth Sony phù hợp cho học online:\n\n1. **Tai Nghe Bluetooth Sony WH-CH520**: Giá khoảng 1,5 triệu đồng, pin 50h, âm thanh rõ nét, thoải mái đeo cả ngày. Màu đen, trắng, xanh. P"
+      "first_source": "Tai nghe không dây SONY WI-C100 - Hàng chính hãng",
+      "answer_preview": "Tôi có một số gợi ý về tai nghe Bluetooth phù hợp cho học online:\n\n1. **Tai nghe Bluetooth 5.4**: Giá khoảng 800.000 đồng. Đây là một lựa chọn tuyệt vời với công nghệ không dây Bluetooth 5.4, cho phép kết nối ổn định và "
     },
     {
       "id": "HP03",
@@ -58,11 +58,11 @@
       "id": "HP04",
       "type": "happy",
       "query": "tai nghe chong on pin trau",
-      "passed": false,
-      "reason": "sources<1",
-      "sources_count": 0,
-      "first_source": "",
-      "answer_preview": "Xin lỗi, mình không tìm thấy thông tin phù hợp để trả lời câu hỏi này."
+      "passed": true,
+      "reason": "ok",
+      "sources_count": 5,
+      "first_source": "Tai Nghe Bluetooth Sony WH-1000XM6 - Hàng Chính Hãng",
+      "answer_preview": "Tôi có thể gợi ý một số sản phẩm tai nghe chống ồn với pin trâu như sau:\n\n1. **Tai nghe Edifier X2**: Giá khoảng 800.000 đồng, mô tả sản phẩm là tai nghe nhét tai không dây với công nghệ chống ồn tiên tiến, pin trâu lên "
     },
     {
       "id": "HP05",
@@ -71,18 +71,18 @@
       "passed": true,
       "reason": "ok",
       "sources_count": 5,
-      "first_source": "Samsung Galaxy A55 5G",
-      "answer_preview": "Tôi không tìm thấy sản phẩm Samsung Galaxy với giá tầm 6 triệu trong dữ liệu hiện tại. Tuy nhiên, tôi có thể gợi ý một số sản phẩm điện thoại khác có giá gần với mức bạn đang tìm kiếm:\n\n1. **Xiaomi Redmi Note 13 Pro**: Đ"
+      "first_source": "Máy Tính Xách Tay Laptop Samsung Galaxy Chromebook Go XE340XDA 14\"/N4500/4GB/32GB/ChromeOS - Hàng Chính Hãng",
+      "answer_preview": "Dưới đây là một số sản phẩm Samsung Galaxy phù hợp với mức giá khoảng 6 triệu đồng:\n\n1. **Điện thoại Samsung Galaxy A26 5G (8/128GB)** - Giá: 6,000,000 VND\nMô tả: Mặt lưng kính, AI-Circle to Search, Camera HDR chụp đêm s"
     },
     {
       "id": "HP06",
       "type": "happy",
       "query": "dien thoai xiaomi gia re",
-      "passed": true,
-      "reason": "ok",
-      "sources_count": 5,
-      "first_source": "Tai Nghe Chup Tai Sony WH-1000XM5",
-      "answer_preview": "Dựa trên yêu cầu của bạn, tôi tìm thấy một số điện thoại Xiaomi giá rẻ như sau:\n\n1. **Xiaomi Redmi Note 13 Pro**: Điện thoại giá rẻ với màn hình AMOLED 6.67 inch 120Hz, chip Snapdragon 7s Gen 2, RAM 8GB, ROM 256GB. Camer"
+      "passed": false,
+      "reason": "keyword_miss",
+      "sources_count": 0,
+      "first_source": "",
+      "answer_preview": "Xin lỗi, mình không tìm thấy thông tin phù hợp để trả lời câu hỏi này."
     },
     {
       "id": "HP07",
@@ -91,8 +91,8 @@
       "passed": true,
       "reason": "ok",
       "sources_count": 5,
-      "first_source": "Apple iPhone 15",
-      "answer_preview": "Nếu bạn đang tìm kiếm một chiếc điện thoại Apple iPhone với giá tầm 15 triệu, tôi có thể gợi ý cho bạn một số sản phẩm sau:\n\n1. **Apple iPhone 15**: Điện thoại màn hình 6.1 inch Super Retina XDR OLED, chip A16 Bionic, RA"
+      "first_source": "Apple iPhone 17e",
+      "answer_preview": "Dựa trên thông tin bạn cung cấp, dưới đây là một số sản phẩm liên quan đến Apple iPhone với giá khoảng 15 triệu:\n\n1. **Apple iPhone 14**: Giá khoảng 14.990.000 đồng. Mô tả: Với hệ thống camera kép tiên tiến nhất từng có "
     },
     {
       "id": "HP08",
@@ -108,21 +108,21 @@
       "id": "HP09",
       "type": "happy",
       "query": "giay nike cho nam",
-      "passed": true,
-      "reason": "ok",
-      "sources_count": 5,
-      "first_source": "Giay The Nike Air Max 90 Nam",
-      "answer_preview": "Tôi có thể gợi ý cho bạn một số sản phẩm giày Nike cho nam như sau:\n\n1. **Giay The Nike Air Max 90 Nam**: Giá 3.900.000 đồng, mô tả: Giày thể thao cho nam, chất liệu da tổng hợp bên bị, màu trắng đen có điểm, size 40-45,"
+      "passed": false,
+      "reason": "keyword_miss",
+      "sources_count": 0,
+      "first_source": "",
+      "answer_preview": "Xin lỗi, mình không tìm thấy thông tin phù hợp để trả lời câu hỏi này."
     },
     {
       "id": "HP10",
       "type": "happy",
       "query": "ao quan adidas gia tot",
-      "passed": true,
-      "reason": "ok",
-      "sources_count": 5,
-      "first_source": "Quan The Thao Adidas Essential",
-      "answer_preview": "Tôi có thể gợi ý cho bạn một số sản phẩm áo quần Adidas với giá tốt như sau:\n\n1. **Quan The Thao Adidas Essential**: Quan thể thao cho nam và nữ, chất liệu Interlock thoáng khí, có túi zip an toàn. Phù hợp cho chạy bộ, t"
+      "passed": false,
+      "reason": "keyword_miss",
+      "sources_count": 0,
+      "first_source": "",
+      "answer_preview": "Xin lỗi, mình không tìm thấy thông tin phù hợp để trả lời câu hỏi này."
     },
     {
       "id": "HN01",
@@ -192,17 +192,17 @@
       "reason": "ok",
       "sources_count": 0,
       "first_source": "",
-      "answer_preview": "Xin lỗi, mình không tìm thấy thông tin phù hợp để trả lời câu hỏi này."
+      "answer_preview": "Xin lỗi, hiện dữ liệu chưa có sản phẩm laptop gaming phù hợp (ví dụ RTX 4050). Bạn thử mở rộng mức giá hoặc đổi sang danh mục khác nhé."
     },
     {
       "id": "HN08",
       "type": "hard_negative",
       "query": "dien thoai pin tren 5000mah ram 8gb gia tam 6 trieu",
-      "passed": true,
-      "reason": "ok",
-      "sources_count": 0,
-      "first_source": "",
-      "answer_preview": "Xin lỗi, mình không tìm thấy thông tin phù hợp để trả lời câu hỏi này."
+      "passed": false,
+      "reason": "sources>0",
+      "sources_count": 5,
+      "first_source": "LAPTOP LENOVO X1 CARBON GEN 4/ CORE I5-6300U / RAM 8GB / SSD 512GB / MÀN HÌNH 14 INCH / HÀNG CHÍNH HÃNG",
+      "answer_preview": "Dựa trên yêu cầu của bạn về điện thoại có pin trên 5000mAh, RAM 8GB và giá tầm 6 triệu, tôi có một số gợi ý sau:\n\n1. **Oppo Reno15 F 5G**: Điện thoại này có RAM 8GB, hỗ trợ khả năng đa nhiệm mượt mà, pin trên 5000mAh và "
     },
     {
       "id": "HN09",
@@ -228,11 +228,11 @@
       "id": "MIX01",
       "type": "mixed",
       "query": "xin chao ban, toi can tai nghe sony duoi 2 trieu",
-      "passed": false,
-      "reason": "sources<1",
-      "sources_count": 0,
-      "first_source": "",
-      "answer_preview": "Xin lỗi, mình không tìm thấy thông tin phù hợp để trả lời câu hỏi này."
+      "passed": true,
+      "reason": "ok",
+      "sources_count": 5,
+      "first_source": "GẤU BÔNG RÁI CÁ ĐEO TAI NGHE – THÚ NHỒI BÔNG NGỘ NGHĨNH CỰC DỄ THƯƠNG",
+      "answer_preview": "Xin chào bạn, tôi có thể giúp bạn tìm kiếm tai nghe Sony dưới 2 triệu đồng. Dưới đây là một số gợi ý:\n\n1. **Tai Nghe Dây Dành Cho Hoco. M88 Nghe Hay Có Mic**: Giá khoảng 800.000 đồng. Đây là một lựa chọn tốt với thiết kế"
     },
     {
       "id": "MIX02",
@@ -241,8 +241,8 @@
       "passed": true,
       "reason": "ok",
       "sources_count": 5,
-      "first_source": "Tai Nghe Bluetooth Sony WH-CH520",
-      "answer_preview": "Chào bạn, tôi có thể giúp bạn tìm tai nghe Bluetooth phù hợp cho việc học online. Dưới đây là một số gợi ý:\n\n1. **Tai Nghe Bluetooth Sony WH-CH520**: Giá khoảng 1,5 triệu đồng, pin 50h, sạc nhanh USB-C, âm thanh rõ nét, "
+      "first_source": "Tai nghe nhét tai Bluetooth Genius True Wireless HS-M910BT- Hàng chính hãng",
+      "answer_preview": "Chào bạn, tôi có thể giúp bạn tìm tai nghe Bluetooth phù hợp cho học online. Dưới đây là một số gợi ý:\n\n1. **Tai Nghe Bluetooth Hoco E1 V4.1 - Hàng Nhập Khẩu**: Giá khoảng 500.000 - 700.000 đồng. Sản phẩm này sử dụng côn"
     },
     {
       "id": "MIX03",
@@ -258,26 +258,6 @@
       "id": "MIX04",
       "type": "mixed",
       "query": "xin chao, samsung nao gia re",
-      "passed": true,
-      "reason": "ok",
-      "sources_count": 5,
-      "first_source": "Samsung Galaxy A55 5G",
-      "answer_preview": "Xin chào! Dựa trên thông tin hiện tại, tôi không tìm thấy thông tin về các sản phẩm Samsung với giá rẻ cụ thể. Tuy nhiên, tôi có thể gợi ý một số sản phẩm Samsung có sẵn:\n\n1. **Samsung Galaxy A55 5G**: Điện thoại màn hìn"
-    },
-    {
-      "id": "MIX05",
-      "type": "mixed",
-      "query": "hi, can giay nike",
-      "passed": true,
-      "reason": "ok",
-      "sources_count": 5,
-      "first_source": "Giay The Nike Air Max 90 Nam",
-      "answer_preview": "Xin chào! Tôi có thể giúp bạn tìm kiếm giày Nike phù hợp. Dưới đây là một số gợi ý:\n\n1. **Giay The Nike Air Max 90 Nam**: Giày thể thao cho nam, chất liệu da tổng hợp, màu trắng đen có điểm. Size 40-45, giá 3.900.000 đồn"
-    },
-    {
-      "id": "MIX06",
-      "type": "mixed",
-      "query": "greetings, laptop nao tot cho sinh vien",
       "passed": false,
       "reason": "keyword_miss",
       "sources_count": 0,
@@ -285,14 +265,34 @@
       "answer_preview": "Xin lỗi, mình không tìm thấy thông tin phù hợp để trả lời câu hỏi này."
     },
     {
+      "id": "MIX05",
+      "type": "mixed",
+      "query": "hi, can giay nike",
+      "passed": false,
+      "reason": "keyword_miss",
+      "sources_count": 0,
+      "first_source": "",
+      "answer_preview": "Xin lỗi, mình không tìm thấy thông tin phù hợp để trả lời câu hỏi này."
+    },
+    {
+      "id": "MIX06",
+      "type": "mixed",
+      "query": "greetings, laptop nao tot cho sinh vien",
+      "passed": true,
+      "reason": "ok",
+      "sources_count": 0,
+      "first_source": "",
+      "answer_preview": "Xin lỗi, hiện dữ liệu chưa có sản phẩm laptop gaming phù hợp (ví dụ RTX 4050). Bạn thử mở rộng mức giá hoặc đổi sang danh mục khác nhé."
+    },
+    {
       "id": "MIX07",
       "type": "mixed",
       "query": "chao ban, may lanh nao tiet kiem dien",
-      "passed": true,
-      "reason": "ok",
-      "sources_count": 5,
-      "first_source": "Tai Nghe Chup Tai Sony WH-1000XM5",
-      "answer_preview": "Xin chào! Nếu bạn đang tìm kiếm máy lạnh tiết kiệm điện, tôi có một số gợi ý cho bạn:\n\n1. **Máy Lanh Panasonic Inverter 1 HP**: Máy lạnh này sử dụng công nghệ Inverter siêu tiết kiệm điện, giúp giảm thiểu tiêu thụ điện n"
+      "passed": false,
+      "reason": "keyword_miss",
+      "sources_count": 0,
+      "first_source": "",
+      "answer_preview": "Xin lỗi, mình không tìm thấy thông tin phù hợp để trả lời câu hỏi này."
     },
     {
       "id": "MIX08",
@@ -301,28 +301,28 @@
       "passed": true,
       "reason": "ok",
       "sources_count": 5,
-      "first_source": "Quat Dong Lioe Mini Kep Tuyp",
-      "answer_preview": "Xin chào! Tôi có thể giúp bạn tìm kiếm sản phẩm quạt gia đình phù hợp. Dưới đây là một số gợi ý:\n\n* Quat Dong Lioe Mini Kep Tuyp: Quạt này có 3 tốc độ gió, xoay 90 độ, và được làm từ nhựa ABS an toàn. Công suất tiêu thụ "
+      "first_source": "Cốc Lọc Thô 10 inch AQUAYAKI AQUA-S101 Cao Cấp Kèm Lõi, Bộ Lọc Nước Đầu Nguồn, Sinh Hoạt, Gia Đình - Hàng Chính Hãng",
+      "answer_preview": "Xin chào! Dưới đây là một số sản phẩm liên quan đến \"quat gia dinh\" mà bạn có thể quan tâm:\n\n1. **Bộ lọc nước sinh hoạt 10 inch** - Giá: 250.000 đồng - Mô tả: Bộ lọc nước sinh hoạt 10 inch là sản phẩm giúp lọc nước sạch "
     },
     {
       "id": "MIX09",
       "type": "mixed",
       "query": "xin chao, can bep dien",
-      "passed": true,
-      "reason": "ok",
-      "sources_count": 5,
-      "first_source": "Bep Dien Tu Kangaroo KG449i",
-      "answer_preview": "Xin chào! Tôi có thể giúp bạn tìm kiếm sản phẩm bếp điện phù hợp. Dưới đây là một số gợi ý:\n\n1. **Bep Dien Tu Kangaroo KG449i**: Bếp điện tử Kangaroo KG449i với 4 bếp induction tiết kiệm điện, công suất 6000W, mặt kính S"
+      "passed": false,
+      "reason": "keyword_miss",
+      "sources_count": 0,
+      "first_source": "",
+      "answer_preview": "Xin lỗi, mình không tìm thấy thông tin phù hợp để trả lời câu hỏi này."
     },
     {
       "id": "MIX10",
       "type": "mixed",
       "query": "hi there, toi muon mua may anh",
-      "passed": true,
-      "reason": "ok",
-      "sources_count": 5,
-      "first_source": "Tai Nghe Chup Tai Sony WH-1000XM5",
-      "answer_preview": "Xin chào! Tôi có thể giúp bạn tìm kiếm máy ảnh phù hợp. Dưới đây là một số gợi ý:\n\n1. **Máy Ảnh Sony ZV-1 II**: Máy ảnh này dành cho sáng tạo nội dung, với cảm biến 1 inch 20.1MP, lens 18-50mm siêu rộng. Quay video 4K, l"
+      "passed": false,
+      "reason": "keyword_miss",
+      "sources_count": 0,
+      "first_source": "",
+      "answer_preview": "Xin lỗi, mình không tìm thấy thông tin phù hợp để trả lời câu hỏi này."
     }
   ]
 }

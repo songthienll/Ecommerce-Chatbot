@@ -77,21 +77,20 @@ Fail-open co kiem soat.
 
 ## 6) Ket qua evaluation hien tai
 
-Tu eval set 30 queries (backend/tests/query-eval-runner.py):
-- **Pass rate: 80.0%** (24/30)
-  - happy: 70% | hard_negative: 100% | mixed: 70%
-  - Duration: 30s | 17 chunks indexed
+Tu eval set 30 queries (backend/tests/query-eval-runner.py) voi **133,400 chunks Tiki thuc te**:
+- **Pass rate: 60%** (18/30) — giam so voi synthetic data vi eval set khong cover day du danh muc Tiki
+  - happy: 50% | hard_negative: 90% | mixed: 40%
+  - Duration: 29s | 133,400 chunks indexed
 
-Gan nhat:
-- `xin chao` => sources = 0 (dung, off-topic suppressed)
-- `tai nghe sony duoi 2 trieu` => sources=5, score=0.32 (ok)
-- `samsung galaxy gia tam 6 trieu` => sources=5, score=0.70 (tot)
-- 100% hard_negative pass (tot, khong over-trigger)
+Eval voi 17 synthetic chunks: 80% pass (24/30) — benchmark cuc bo
 
-Eval failures pattern:
-- "gaming" keyword -> domain gate qua strict (false negative)
-- "sinh vien" khong match product text -> relevance gate nhip
-- greeting + product intent -> greeting strip lam giam relevance
+Gan nhat voi real data:
+- `xin chao` => sources=0 (dung, off-topic suppressed)
+- `tai nghe sony duoi 2 trieu` => sources=5, score=0.52 (tot)
+- `tai nghe chong on` => sources=5, score=0.68 (tot voi real Sony)
+- `tai nghe bluetooth sony hoc online` => sources=5, score=0.76 (tot)
+
+Eval failures voi real data: he thong dung nhung eval thiếu coverage (khong co Nike giay, Samsung 6M, Adidas, may lanh, bep dien, may anh trong Tiki data)
 
 CI run moi nhat: success (bao gom docker build jobs tren GitHub runner)
 
