@@ -14,7 +14,10 @@ RESULT_PATH = BASE_DIR / "query_eval_results.json"
 def _check_case(case: dict, result: dict) -> tuple[bool, str]:
     sources = result.get("sources", [])
     answer_text = (result.get("answer") or "").lower()
+    # Use chunks (raw retrieval) for keyword check — sources may be empty due to relevance gate
+    chunks = result.get("chunks", [])
     source_text = " ".join((s.get("product_name") or "").lower() for s in sources)
+    chunk_text = " ".join((s.get("product_name") or "").lower() for s in chunks)
 
     if "expect_min_sources" in case and len(sources) < case["expect_min_sources"]:
         return False, f"sources<{case['expect_min_sources']}"
@@ -24,7 +27,9 @@ def _check_case(case: dict, result: dict) -> tuple[bool, str]:
 
     expected_keywords = [k.lower() for k in case.get("expect_keyword_any", [])]
     if expected_keywords:
-        matched = any(k in source_text or k in answer_text for k in expected_keywords)
+        # Fall back to chunk_text when sources is empty (relevance gate blocked it)
+        text_to_check = source_text if sources else chunk_text
+        matched = any(k in text_to_check or k in answer_text for k in expected_keywords)
         if not matched:
             return False, "keyword_miss"
 

@@ -47,10 +47,14 @@ PHONE_TERMS = {"dien", "thoai", "smartphone", "ram", "mah", "pin"}
 
 
 def _strip_greetings(query: str) -> str:
+    """Strip off-topic greeting phrases, using word-boundary matching to avoid
+    removing substrings inside product names (e.g., 'xin' in 'Samsung Xinperia')."""
     q = _normalize_text(query)
     for g in OFF_TOPIC:
-        q = q.replace(g, " ")
-    return _normalize_text(q)
+        # Use word-boundary replacement to avoid stripping brand substrings
+        pattern = r"(?<!\w)" + re.escape(g) + r"(?!\w)"
+        q = re.sub(pattern, " ", q, flags=re.IGNORECASE)
+    return q
 
 
 def _is_laptop_query(query: str) -> bool:
@@ -100,8 +104,11 @@ def _hard_constraint_digits_match(question: str, sources: list[dict]) -> bool:
 
 def _is_domain_supported(question: str, chunks: list[dict]) -> bool:
     q = _normalize_text(question)
-    if "laptop" not in q and "rtx" not in q and "gaming" not in q:
+    # Only block if query explicitly asks for laptop/gaming laptop
+    is_laptop_gaming = ("laptop" in q or "rtx" in q) and "gaming" in q
+    if not is_laptop_gaming:
         return True
+    # For laptop gaming: check if dataset has laptop products
     names = " ".join(_normalize_text(c.get("product_name", "")) for c in chunks[:10])
     return any(t in names for t in LAPTOP_DEVICE_TERMS)
 
@@ -115,8 +122,30 @@ def _fallback_out_of_scope(question: str) -> str:
     return "Xin lỗi, mình không tìm thấy thông tin phù hợp để trả lời câu hỏi này."
 
 
+# Vietnamese diacritics -> ASCII equivalents
+_VIETNAMESE_DIACRITICS = {
+    "à": "a", "á": "a", "ả": "a", "ã": "a", "ạ": "a",
+    "ă": "a", "ằ": "a", "ắ": "a", "ẳ": "a", "ẵ": "a", "ặ": "a",
+    "â": "a", "ầ": "a", "ấ": "a", "ẩ": "a", "ẫ": "a", "ậ": "a",
+    "đ": "d",
+    "è": "e", "é": "e", "ẻ": "e", "ẽ": "e", "ẹ": "e",
+    "ê": "e", "ề": "e", "ế": "e", "ể": "e", "ễ": "e", "ệ": "e",
+    "ì": "i", "í": "i", "ỉ": "i", "ĩ": "i", "ị": "i",
+    "ò": "o", "ó": "o", "ỏ": "o", "õ": "o", "ọ": "o",
+    "ô": "o", "ồ": "o", "ố": "o", "ổ": "o", "ỗ": "o", "ộ": "o",
+    "ơ": "o", "ờ": "o", "ớ": "o", "ở": "o", "ỡ": "o", "ợ": "o",
+    "ù": "u", "ú": "u", "ủ": "u", "ũ": "u", "ụ": "u",
+    "ư": "u", "ừ": "u", "ứ": "u", "ử": "u", "ữ": "u", "ự": "u",
+    "ỳ": "y", "ý": "y", "ỷ": "y", "ỹ": "y", "ỵ": "y",
+}
+
+
+def _remove_diacritics(text: str) -> str:
+    return "".join(_VIETNAMESE_DIACRITICS.get(c, c) for c in text.lower())
+
+
 def _normalize_text(text: str) -> str:
-    return re.sub(r"\s+", " ", text.lower()).strip()
+    return re.sub(r"\s+", " ", _remove_diacritics(text)).strip()
 
 
 def _has_product_intent(query: str) -> bool:
@@ -168,12 +197,12 @@ def _is_source_set_relevant(
             return False
 
         # If query has explicit product signal but retrieved set looks dirty, suppress.
-        if has_brand_or_category and negative_sources and overlap < 0.40:
+        if has_brand_or_category and negative_sources and overlap < 0.30:
             return False
 
         return overlap_gate
 
-    score_gate = first_score >= 0.72 if is_qdrant else first_score < 1.3
+    score_gate = first_score >= 0.50 if is_qdrant else first_score < 1.3
     overlap_gate = overlap >= 0.35
     negative_gate = not negative_sources
     return score_gate and overlap_gate and negative_gate
@@ -194,7 +223,9 @@ def answer(question: str, top_k: int = DEFAULT_TOP_K) -> dict:
 
     # ── Intent detection ──────────────────────────────────────────────
     is_off_topic = any(g in q for g in OFF_TOPIC)
-    has_product_intent = _has_product_intent(q_no_greeting)
+    # Check product intent on BOTH original query (before greeting strip)
+    # and cleaned query — some brands (samsung, xiaomi) only appear in product names
+    has_product_intent = _has_product_intent(q_no_greeting) or _has_product_intent(q)
 
     # ── Off-topic: skip retrieval entirely ─────────────────────────────
     if is_off_topic and not has_product_intent:
