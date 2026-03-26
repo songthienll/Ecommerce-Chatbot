@@ -6,11 +6,10 @@ Vietnamese RAG chatbot for Tiki product search — React + FastAPI + Qdrant.
 
 | Layer | Technology |
 |---|---|
-| Frontend | React 18 + TypeScript + Vite |
+| Frontend | React + TypeScript + Vite |
 | Backend | FastAPI + Python |
-| Vector DB | Qdrant v1.16 (ChromaDB compatible) |
+| Vector DB | Qdrant |
 | LLM | Groq (llama-3.3-70b) |
-| Re-ranking | Cohere multilingual |
 | Embeddings | sentence-transformers (paraphrase-multilingual-mpnet-base-v2) |
 
 ## Architecture
@@ -28,10 +27,6 @@ User Query (Vietnamese)
         ▼
   Qdrant hybrid search
   (vector + keyword scoring)
-        │
-        ▼
-  Cohere re-ranking
-  (optional)
         │
         ▼
   Groq LLM
