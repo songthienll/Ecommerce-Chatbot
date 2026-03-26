@@ -172,6 +172,20 @@ GitHub Actions triggers on every push to `master`:
 - `frontend-test` — typecheck + build
 - `docker-build` — build both images
 
+## Evaluation Metrics (latest)
+
+Baseline on real Tiki index (133,400 chunks):
+- Pass rate: **60.0%** (18/30)
+- By type: happy 50% | hard_negative 90% | mixed 40%
+
+After retrieval + gating fixes:
+- Pass rate: **76.67%** (23/30)
+- By type: happy 90% | hard_negative 90% | mixed 50%
+
+Extra quality signals:
+- Backend unit tests: **18 passed**
+- Active vector collection: `tiki_products` (**133,400 chunks**)
+
 ## License
 
 MIT
