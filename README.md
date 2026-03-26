@@ -155,10 +155,21 @@ docker compose -f docker-compose.yml up -d
 ```
 
 ### Railway / Render / Fly.io
+This section is for deploying to cloud PaaS platforms. If you only run locally, you can ignore it.
 
-1. Set env vars in dashboard
-2. Point `docker-compose.yml` to your Qdrant snapshot or re-ingest on startup
-3. Build: `docker compose up --build`
+Recommended setup on Railway/Render/Fly.io:
+1. Deploy **backend** and **frontend** as separate services (from `backend/Dockerfile` and `frontend/Dockerfile`).
+2. Use a persistent vector database:
+   - either managed Qdrant cloud, or
+   - self-hosted Qdrant with persistent volume/snapshot restore.
+3. Set required environment variables in the platform dashboard:
+   - `GROQ_API_KEY`, `COHERE_API_KEY` (optional)
+   - `VECTOR_DB=qdrant`
+   - `QDRANT_URL=<your-qdrant-url>`
+   - `LLM_PROVIDER=groq`, `GROQ_MODEL=llama-3.3-70b-versatile`
+4. Ensure data bootstrap strategy is defined:
+   - restore Qdrant snapshot, or
+   - run ingest/migration job before serving traffic.
 
 ## CI/CD
 
