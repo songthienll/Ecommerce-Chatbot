@@ -75,12 +75,22 @@ Trong `pipeline.py`:
 Cohere loi/het key -> skip re-rank, he thong van chay.
 Fail-open co kiem soat.
 
-## 6) Ket qua tuning gan day (noi theo fact)
+## 6) Ket qua evaluation hien tai
 
+Tu eval set 25 questions (backend/data/eval/results.json):
+- hit@1 = 0.48 | hit@3 = 0.52 | hit@5 = 0.52
+- mrr = 0.50 | precision@1 = 0.48 | precision@5 = 0.224
+- rouge_l = 0.277 | faithfulness = 3.28 | relevance = 2.04
+
+New eval set 30 queries + runner: `backend/tests/query_eval_set.json` + `query-eval-runner.py`
+(Chua chay duoc vi Qdrant collection trong — can ingest/migrate data truoc.)
+
+Manual test results:
 - `xin chao` => sources = 0 (dung)
 - `laptop gaming rtx 4050 duoi 20 trieu` => sources = 0 + fallback out-of-scope
 - query tai nghe Sony kho => sources co relevance tot hon truoc
-- CI run moi nhat: success (bao gom docker build jobs tren GitHub runner)
+
+CI run moi nhat: success (bao gom docker build jobs tren GitHub runner)
 
 ## 7) Diem yeu / tech debt (can noi thang)
 
