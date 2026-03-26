@@ -77,18 +77,21 @@ Fail-open co kiem soat.
 
 ## 6) Ket qua evaluation hien tai
 
-Tu eval set 25 questions (backend/data/eval/results.json):
-- hit@1 = 0.48 | hit@3 = 0.52 | hit@5 = 0.52
-- mrr = 0.50 | precision@1 = 0.48 | precision@5 = 0.224
-- rouge_l = 0.277 | faithfulness = 3.28 | relevance = 2.04
+Tu eval set 30 queries (backend/tests/query-eval-runner.py):
+- **Pass rate: 80.0%** (24/30)
+  - happy: 70% | hard_negative: 100% | mixed: 70%
+  - Duration: 30s | 17 chunks indexed
 
-New eval set 30 queries + runner: `backend/tests/query_eval_set.json` + `query-eval-runner.py`
-(Chua chay duoc vi Qdrant collection trong — can ingest/migrate data truoc.)
+Gan nhat:
+- `xin chao` => sources = 0 (dung, off-topic suppressed)
+- `tai nghe sony duoi 2 trieu` => sources=5, score=0.32 (ok)
+- `samsung galaxy gia tam 6 trieu` => sources=5, score=0.70 (tot)
+- 100% hard_negative pass (tot, khong over-trigger)
 
-Manual test results:
-- `xin chao` => sources = 0 (dung)
-- `laptop gaming rtx 4050 duoi 20 trieu` => sources = 0 + fallback out-of-scope
-- query tai nghe Sony kho => sources co relevance tot hon truoc
+Eval failures pattern:
+- "gaming" keyword -> domain gate qua strict (false negative)
+- "sinh vien" khong match product text -> relevance gate nhip
+- greeting + product intent -> greeting strip lam giam relevance
 
 CI run moi nhat: success (bao gom docker build jobs tren GitHub runner)
 
